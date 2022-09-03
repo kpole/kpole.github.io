@@ -22,6 +22,7 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   name: material
+  custom_dir: overrides
   logo: assets/images/favicon.png
   favicon: assets/images/favicon.png
   features:
@@ -30,6 +31,20 @@ theme:
     - navigation.tabs
     - navigation.prune
     - navigation.top
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -59,6 +74,18 @@ plugins:
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
+  - search:
+      jieba_dict: dict.txt 
+      jieba_dict_user: user_dict.txt
+    
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kpole
+
+copyright: Copyright &copy;  2022 - 2022 yaodong han
+
+
 
 nav:
   - Home: 'index.md'
