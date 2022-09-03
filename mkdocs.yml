@@ -22,7 +22,6 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   name: material
-  custom_dir: overrides
   logo: assets/images/favicon.png
   favicon: assets/images/favicon.png
   features:
