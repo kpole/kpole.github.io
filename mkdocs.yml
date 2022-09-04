@@ -30,6 +30,7 @@ theme:
     - navigation.tabs
     - navigation.prune
     - navigation.top
+    - content.tabs.link
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -45,6 +46,9 @@ theme:
 
 
 markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
@@ -62,11 +66,16 @@ markdown_extensions:
   - codehilite:    # 代码高亮，显示行号
       guess_lang: false
       linenums: true
+  - tables
+  
+
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 
 plugins:
   - git-revision-date-localized:
@@ -87,11 +96,16 @@ copyright: Copyright &copy;  2022 - 2022 yaodong han
 
 
 nav:
-  - Home: 'index.md'
+  - Home: 
+    - Home: 'index.md'
+    - 比赛记录: 'record.md'
   - LeetCode: 
     - 周赛:
-      - 第308场周赛: 'LeetCode/周赛/第308场周赛.md' 
-      - 第307场周赛: 'LeetCode/周赛/第307场周赛.md'
+      - 第 309 场周赛: 'LeetCode/周赛/第309场周赛.md'
+      - 第 308 场周赛: 'LeetCode/周赛/第308场周赛.md' 
+      - 第 307 场周赛: 'LeetCode/周赛/第307场周赛.md'
+    - 双周赛:
+      - 第 86 场双周赛: 'LeetCode/双周赛/第86场双周赛.md'
   - AtCoder:
     - ABC: 
       - ABC 266: 'AtCoder/ABC/266.md'
