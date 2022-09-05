@@ -32,17 +32,19 @@ theme:
     - navigation.top
     - content.tabs.link
   palette: 
+    primary: 'white'
+    accent: 'red'
     # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
+    # - scheme: default
+    #   toggle:
+    #     icon: material/weather-sunny
+    #     name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+    # # Palette toggle for dark mode
+    # - scheme: slate
+    #   toggle:
+    #     icon: material/weather-night
+    #     name: Switch to light mode
 
 
 markdown_extensions:
@@ -78,7 +80,8 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - 'javascripts/tablesort.js'
 
-
+extra_css:
+  - 'css/extra.css'
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
