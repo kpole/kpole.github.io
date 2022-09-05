@@ -71,11 +71,13 @@ markdown_extensions:
 
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - 'javascripts/extra.js?v=16'
+  - 'javascripts/mathjax.js'
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+  - 'javascripts/tablesort.js'
+
 
 plugins:
   - git-revision-date-localized:
@@ -94,7 +96,6 @@ extra:
 copyright: Copyright &copy;  2022 - 2022 yaodong han
 
 
-
 nav:
   - Home: 
     - Home: 'index.md'
@@ -106,6 +107,15 @@ nav:
       - 第 307 场周赛: 'LeetCode/周赛/第307场周赛.md'
     - 双周赛:
       - 第 86 场双周赛: 'LeetCode/双周赛/第86场双周赛.md'
+    - 基础: 'LeetCode/01_基础/index.md'
+    - 数据结构: 
+      - 哈希: 
+        - 树哈希: 'LeetCode/02_数据结构/哈希/树哈希.md'
+    - 动态规划: 'LeetCode/03_动态规划/index.md'
+    - 字符串: 'LeetCode/04_字符串/index.md'
+    - 搜索: 'LeetCode/05_搜索/index.md'
+    - 图论: 'LeetCode/06_图论/index.md'
+    - 杂项: 'LeetCode/07_杂项/index.md'
   - AtCoder:
     - ABC: 
       - ABC 266: 'AtCoder/ABC/266.md'
