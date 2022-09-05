@@ -1,4 +1,4 @@
-site_name: 今夕的Doc
+site_name: 今夕的wiki
 
 site_url: 'https://kpole.github.io/'
 site_author: 'kpole'
@@ -32,19 +32,19 @@ theme:
     - navigation.top
     - content.tabs.link
   palette: 
-    primary: 'white'
-    accent: 'red'
     # Palette toggle for light mode
-    # - scheme: default
-    #   toggle:
-    #     icon: material/weather-sunny
-    #     name: Switch to dark mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
 
-    # # Palette toggle for dark mode
-    # - scheme: slate
-    #   toggle:
-    #     icon: material/weather-night
-    #     name: Switch to light mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    # primary: 'white'
+    # accent: 'red'
 
 
 markdown_extensions:

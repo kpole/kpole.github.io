@@ -1,6 +1,15 @@
-# 关于我
+## 关于我
 
-大家好，我是今夕，目前HUST研二在读，是一个退役的二流ACMer，仍热衷于在闲暇时间打比赛。
+你好，我是今夕，目前HUST研二在读，是一个退役的二流ACMer，仍热衷于在闲暇时间打比赛（摸鱼）。
+
+我的一些账号们:
+
+[![](https://img.shields.io/badge/kirito-master%202180-orange?style=for-the-badge&logo=codeforces)](https://codeforces.com/profile/Kirito) 
+
+[![](https://img.shields.io/badge/kpole-1%20Kyu%201828-blue?style=for-the-badge)](https://atcoder.jp/users/kpole) 
+
+[![](https://img.shields.io/badge/今夕-Guardian%202832-red?style=for-the-badge&logo=leetcode)](https://leetcode.cn/u/kpole/)
+
 
 本 wiki 包含的内容：
 
