@@ -105,6 +105,7 @@ nav:
     - 比赛记录: 'record.md'
   - LeetCode: 
     - 周赛:
+      - 第 310 场周赛: 'LeetCode/周赛/第310场周赛.md'
       - 第 309 场周赛: 'LeetCode/周赛/第309场周赛.md'
       - 第 308 场周赛: 'LeetCode/周赛/第308场周赛.md' 
       - 第 307 场周赛: 'LeetCode/周赛/第307场周赛.md'
@@ -121,7 +122,8 @@ nav:
     - 杂项: 'LeetCode/07_杂项/index.md'
   - AtCoder:
     - ABC: 
+      - ABC 267: 'AtCoder/ABC/267.md'
       - ABC 266: 'AtCoder/ABC/266.md'
       - ABC 265: 'AtCoder/ABC/265.md'
-  - About: 'about.md'
-
+  - 其他:
+    - MBTI: 'other/MBTI.md'
