@@ -114,6 +114,8 @@ nav:
       - 数据结构:
           - 哈希:
               - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
+          - 栈:
+              - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
       - 动态规划: "LeetCode/03_动态规划/index.md"
       - 字符串: "LeetCode/04_字符串/index.md"
       - 搜索: "LeetCode/05_搜索/index.md"
