@@ -109,7 +109,8 @@ nav:
       - 双周赛:
           - 第 87 场双周赛: "LeetCode/双周赛/第87场双周赛.md"
           - 第 86 场双周赛: "LeetCode/双周赛/第86场双周赛.md"
-      - 基础: "LeetCode/01_基础/index.md"
+      - 基础:
+          - 贪心: "LeetCode/01_基础/贪心.md"
       - 数据结构:
           - 哈希:
               - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
@@ -126,3 +127,4 @@ nav:
   - 其他:
       - 正则表达式: "other/正则表达式.md"
       - MBTI: "other/MBTI.md"
+      - 正念: "other/正念.md"
