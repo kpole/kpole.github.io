@@ -84,9 +84,6 @@ plugins:
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
-  - search:
-      jieba_dict: dict.txt
-      jieba_dict_user: user_dict.txt
 
 extra:
   social:
@@ -101,6 +98,7 @@ nav:
       - 比赛记录: "record.md"
   - LeetCode:
       - 周赛:
+          - 第 312 场周赛: "LeetCode/周赛/第312场周赛.md"
           - 第 311 场周赛: "LeetCode/周赛/第311场周赛.md"
           - 第 310 场周赛: "LeetCode/周赛/第310场周赛.md"
           - 第 309 场周赛: "LeetCode/周赛/第309场周赛.md"
