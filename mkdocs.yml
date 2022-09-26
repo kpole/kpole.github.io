@@ -70,15 +70,15 @@ markdown_extensions:
   - tables
 
 extra_javascript:
-  - "javascripts/extra.js?v=16"
-  - "javascripts/mathjax.js"
+  - "assets/javascripts/extra.js?v=16"
+  - "assets/javascripts/mathjax.js"
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - "javascripts/tablesort.js"
+  - "assets/javascripts/tablesort.js"
 
 extra_css:
-  - "css/extra.css"
+  - "assets/css/extra.css"
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
@@ -124,7 +124,12 @@ nav:
           - ABC 267: "AtCoder/ABC/267.md"
           - ABC 266: "AtCoder/ABC/266.md"
           - ABC 265: "AtCoder/ABC/265.md"
+  - Linux:
+      - vim:
+          - 插件:
+              - NERDTree: "Linux/vim/plugins/nerdtree.md"
   - 其他:
       - 正则表达式: "other/正则表达式.md"
       - MBTI: "other/MBTI.md"
       - 正念: "other/正念.md"
+      - 习得性无助: "other/习得性无助.md"
