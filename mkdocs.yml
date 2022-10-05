@@ -94,44 +94,46 @@ copyright: Copyright &copy;  2022 - 2022 yaodong han
 
 nav:
   - Home:
-      - Home: "index.md"
-      - 比赛记录: "record.md"
+    - Home: "index.md"
+    - 比赛记录: "record.md"
   - LeetCode:
-      - 周赛:
-          - 第 313 场周赛: "LeetCode/周赛/第313场周赛.md"
-          - 第 312 场周赛: "LeetCode/周赛/第312场周赛.md"
-          - 第 311 场周赛: "LeetCode/周赛/第311场周赛.md"
-          - 第 310 场周赛: "LeetCode/周赛/第310场周赛.md"
-          - 第 309 场周赛: "LeetCode/周赛/第309场周赛.md"
-          - 第 308 场周赛: "LeetCode/周赛/第308场周赛.md"
-          - 第 307 场周赛: "LeetCode/周赛/第307场周赛.md"
-      - 双周赛:
-          - 第 88 场双周赛: "LeetCode/双周赛/第88场双周赛.md"
-          - 第 87 场双周赛: "LeetCode/双周赛/第87场双周赛.md"
-          - 第 86 场双周赛: "LeetCode/双周赛/第86场双周赛.md"
-      - 基础:
-          - 贪心: "LeetCode/01_基础/贪心.md"
-      - 数据结构:
-          - 哈希:
-              - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
-          - 栈:
-              - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
-      - 动态规划: "LeetCode/03_动态规划/index.md"
-      - 字符串: "LeetCode/04_字符串/index.md"
-      - 搜索: "LeetCode/05_搜索/index.md"
-      - 图论: "LeetCode/06_图论/index.md"
-      - 杂项: "LeetCode/07_杂项/index.md"
+    - 周赛:
+      - 第 313 场周赛: "LeetCode/周赛/第313场周赛.md"
+      - 第 312 场周赛: "LeetCode/周赛/第312场周赛.md"
+      - 第 311 场周赛: "LeetCode/周赛/第311场周赛.md"
+      - 第 310 场周赛: "LeetCode/周赛/第310场周赛.md"
+      - 第 309 场周赛: "LeetCode/周赛/第309场周赛.md"
+      - 第 308 场周赛: "LeetCode/周赛/第308场周赛.md"
+      - 第 307 场周赛: "LeetCode/周赛/第307场周赛.md"
+    - 双周赛:
+      - 第 88 场双周赛: "LeetCode/双周赛/第88场双周赛.md"
+      - 第 87 场双周赛: "LeetCode/双周赛/第87场双周赛.md"
+      - 第 86 场双周赛: "LeetCode/双周赛/第86场双周赛.md"
+    - 基础:
+      - 贪心: "LeetCode/01_基础/贪心.md"
+    - 数据结构:
+      - 哈希:
+        - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
+      - 栈:
+        - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
+    - 动态规划: "LeetCode/03_动态规划/index.md"
+    - 字符串: "LeetCode/04_字符串/index.md"
+    - 搜索: "LeetCode/05_搜索/index.md"
+    - 图论: "LeetCode/06_图论/index.md"
+    - 杂项: "LeetCode/07_杂项/index.md"
   - AtCoder:
-      - ABC:
-          - ABC 267: "AtCoder/ABC/267.md"
-          - ABC 266: "AtCoder/ABC/266.md"
-          - ABC 265: "AtCoder/ABC/265.md"
+    - ABC:
+      - ABC 267: "AtCoder/ABC/267.md"
+      - ABC 266: "AtCoder/ABC/266.md"
+      - ABC 265: "AtCoder/ABC/265.md"
   - Linux:
-      - vim:
-          - 插件:
-              - NERDTree: "Linux/vim/plugins/nerdtree.md"
+    - vim:
+      - 插件:
+        - NERDTree: "Linux/vim/plugins/nerdtree.md"
+  - C++:
+    - chrono: "CPP/chrono.md"
   - 其他:
-      - 正则表达式: "other/正则表达式.md"
-      - MBTI: "other/MBTI.md"
-      - 正念: "other/正念.md"
-      - 习得性无助: "other/习得性无助.md"
+    - 正则表达式: "other/正则表达式.md"
+    - MBTI: "other/MBTI.md"
+    - 正念: "other/正念.md"
+    - 习得性无助: "other/习得性无助.md"
