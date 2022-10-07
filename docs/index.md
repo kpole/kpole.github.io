@@ -8,7 +8,7 @@
 
 [![](https://img.shields.io/badge/kpole-1%20Kyu%201828-blue?style=for-the-badge)](https://atcoder.jp/users/kpole) 
 
-[![](https://img.shields.io/badge/今夕-Guardian%203022-red?style=for-the-badge&logo=leetcode)](https://leetcode.cn/u/kpole/)
+[![](https://img.shields.io/badge/今夕-Guardian%203048-red?style=for-the-badge&logo=leetcode)](https://leetcode.cn/u/kpole/)
 
 
 本 wiki 包含的内容：
