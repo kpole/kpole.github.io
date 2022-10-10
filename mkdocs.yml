@@ -134,6 +134,7 @@ nav:
   - C++:
     - chrono: "CPP/chrono.md"
   - 其他:
+    - 罗翔老师语录: "other/罗翔老师语录.md"
     - 正则表达式: "other/正则表达式.md"
     - MBTI: "other/MBTI.md"
     - 正念: "other/正念.md"
