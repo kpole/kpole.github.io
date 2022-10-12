@@ -133,6 +133,9 @@ nav:
         - NERDTree: "Linux/vim/plugins/nerdtree.md"
   - C++:
     - chrono: "CPP/chrono.md"
+  - Python:
+    - time模块: "Python/time模块.md"
+    - datetime模块: "Python/datetime模块.md"
   - 其他:
     - 罗翔老师语录: "other/罗翔老师语录.md"
     - 正则表达式: "other/正则表达式.md"
