@@ -51,4 +51,43 @@
 
 ### time.mktime()
 
-待更新[2022-10-12]
+**TimeTuple** 是 python 用于时间处理的元组，有 9 个元素，分别是：
+
+0. 年份
+1. 月份
+2. 日期
+3. 小时
+4. 分钟
+5. 秒（0 ~ 61，60 和 61 表示闰秒）
+6. 星期几（0 ~ 6，0 是星期一）
+7. 一年的第几天
+8. 夏令时（-1，,0，1）
+
+使用 `time.localtime()` 可以返回当前时间的元组，相当于 `struct_time` 结构体。
+
+而 `time.mktime()` 就是 `time.localtime()` 的反函数，它接受 `struct_time` 或者 9 个数字的元组。它返回一个浮点数，以便于 `time()` 兼容。
+
+```python3
+>>> import time
+>>> time.localtime()
+time.struct_time(tm_year=2022, tm_mon=10, tm_mday=13, tm_hour=19, tm_min=56, tm_sec=55, tm_wday=3, tm_yday=286, tm_isdst=0)
+>>> time.localtime(time.time())
+time.struct_time(tm_year=2022, tm_mon=10, tm_mday=13, tm_hour=19, tm_min=57, tm_sec=0, tm_wday=3, tm_yday=286, tm_isdst=0)
+>>> time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+'2022-10-13 19:57:36'
+```
+
+### 互相转换
+
+time.struct_time，datetime.datetime，时间戳以及字符串之间的转换关系如下：
+
+![](../assets/images/python_time.drawio.png)
+
+其中：
+
+1. `dt` 是 `datetime.datetime` 对象
+2. `tm` 是 `time.struct_time` 对象
+3. `ts` 是 `timestamp`
+
+
+所以要从 `datetime` 转到时间戳可以：`time.mktime(dt.timetuple())`。

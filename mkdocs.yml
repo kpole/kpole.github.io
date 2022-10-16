@@ -68,6 +68,11 @@ markdown_extensions:
       guess_lang: false
       linenums: true
   - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
   - "assets/javascripts/extra.js?v=16"
@@ -137,6 +142,7 @@ nav:
     - time模块: "Python/time模块.md"
     - datetime模块: "Python/datetime模块.md"
   - 其他:
+    - 董宇辉老师语录: "other/董宇辉老师语录.md"
     - 罗翔老师语录: "other/罗翔老师语录.md"
     - 正则表达式: "other/正则表达式.md"
     - MBTI: "other/MBTI.md"
