@@ -4,6 +4,7 @@
 
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 316 场周赛](https://leetcode.cn/contest/weekly-contest-316/ranking/) | 138(291) | 0:03:45 | 0:05:20 |0:23:15	 | 0:36:52 |
     | [第 315 场周赛](https://leetcode.cn/contest/weekly-contest-315/ranking/) | 315(695) | 0:01:39 | 0:04:37 | 0:12:43 :lady_beetle: 5 | 0:18:22  |
     | [第 314 场周赛](https://leetcode.cn/contest/weekly-contest-314/ranking/) | 25(48) | 0:03:17 | 0:04:55 | 0:17:02 :lady_beetle: 1 | 0:09:43  |
     | [第 88 场双周赛](https://leetcode.cn/contest/biweekly-contest-88/ranking/) | 14(virtual) | 	0:02:43 | 0:05:15 | 0:07:46 | 0:12:33 |
