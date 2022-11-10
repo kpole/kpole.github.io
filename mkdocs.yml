@@ -131,7 +131,8 @@ nav:
         - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
     - 动态规划: "LeetCode/03_动态规划/index.md"
     - 字符串: "LeetCode/04_字符串/index.md"
-    - 搜索: "LeetCode/05_搜索/index.md"
+    - 搜索: 
+      - 折半搜索: "LeetCode/05_搜索/折半搜索.md"
     - 图论: "LeetCode/06_图论/index.md"
     - 杂项: "LeetCode/07_杂项/index.md"
   - AtCoder:
