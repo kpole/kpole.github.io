@@ -149,6 +149,7 @@ nav:
   - Python:
     - time模块: "Python/time模块.md"
     - datetime模块: "Python/datetime模块.md"
+    - Pandas模块: "Python/Pandas模块.md"
   - 其他:
     - 董宇辉老师语录: "other/董宇辉老师语录.md"
     - 戴建业：如何活出自我: "other/戴建业.md"
