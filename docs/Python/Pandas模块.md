@@ -2,15 +2,406 @@ Pandas 是基于 NumPy 的一种数据处理工具，该工具为了解决数据
 
 Pandas 的数据结构：Pandas 主要有 Series（一维数组），DataFrame（二维数组），Panel（三维数组），Panel4D（四维数组），PanelND（更多维数组）等数据结构。其中 Series 和 DataFrame 应用的最为广泛。
 
- - Series 是一维带标签的数组，它可以包含任何数据类型。包括整数，字符串，浮点数，Python 对象等。Series 可以通过标签来定位。
+- Series 是一维带标签的数组，它可以包含任何数据类型。包括整数，字符串，浮点数，Python 对象等。Series 可以通过标签来定位。
 
-  - DataFrame 是二维的带标签的数据结构。我们可以通过标签来定位数据。这是 NumPy 所没有的。
+- DataFrame 是二维的带标签的数据结构。我们可以通过标签来定位数据。这是 NumPy 所没有的。
+
+Pandas 的数据处理功能十分强大，本文只对常用的功能做一个梳理，帮助快速熟悉。
+
+首先，你需要将其引入：
+
+```python
+import pandas as pd
+import numpy as np
+```
+
+## 生成数据
+
+### Series
+```python
+# 基于列表创建，或者 numpy 列表都可以
+s = pd.Series([1, 3, 5, np.nan, 6, 8])
+
+# 指定索引
+s2 = pd.Series([4, 7, -5, 3], index=['d', 'b', 'a', 'c'])
+
+# 通过字典创建
+sdata = {'Ohio': 35000, 'Texas': 71000, 'Oregon': 16000, 'Utah': 5000}
+s3 = pd.Series(sdata)
+
+# 通过字典创建时，你可以指定 index 的顺序
+states = ['California', 'Ohio', 'Oregon', 'Texas']
+s4 = pd.Series(sdata, index=states)
+```
+
+你可以把 Series 看做是一个定长的有序字典。可以使用 `in` 来判断一个索引是否存在：
+
+```python
+print('Onil' in s3)
+```
+
+Series 本身及其索引都有一个 name 属性，该属性与 pandas 其他的关键功能关系非常密切：
+
+```python
+In [4]: s4.name = 'population'
+
+In [4]: s4.index.name = 'state'
+
+In [5]: s4
+Out[5]: 
+state
+California        NaN
+Ohio          35000.0
+Oregon        16000.0
+Texas         71000.0
+Name: population, dtype: float64
+```
+
+Series 的索引可以通过赋值的方式就地修改：
+
+```python
+In [6]: s4.index = ["A", "B", "C", "D"]
+
+In [7]: s4
+Out[7]: 
+A        NaN
+B    35000.0
+C    16000.0
+D    71000.0
+Name: population, dtype: float64
+```
+
+???+ note
+    虽然可以对 Series 的 index 进行修改，但是 index 对象本身是不可变的，这意味着无法进行以下操作：
+    ```python
+    idx = s4.index
+    idx[1] = 'd' #TypeError
+    ```
+
+    这种不可变的特性，使得 Index 对象可以在多个数据结构之间安全共享。Index 对象类似于一个固定大小的集合，但是与传统集合不同的是，它可以包含重复元素，选择重复的标签会显示所有的结果。
+
+    Index 的一些方法和属性：
+
+    |     方法     |                        说明                        |
+    | :----------: | :------------------------------------------------: |
+    |    append    |      连接另一个Index对象，产生一个新的 index       |
+    |  difference  |             计算差集，并得到一个Index              |
+    | intersection |                      计算交集                      |
+    |    union     |                      计算并集                      |
+    |     isin     | 计算一个指示各值是否都包含在参数集合中的布尔型数组 |
+    |    delete    |       删除索引 i 处的元素，并得到新的 Index        |
+    |     drop     |           删除传入的值，并得到新的 Index           |
+    |    insert    |      将元素插入到索引 i 处，并得到新的 Index       |
+    | is_monotonic |     当各元素均大于等于前一个元素时，返回 True      |
+    |  is_unique   |          当 Index 没有重复值时，返回 True          |
+    |    unique    |           计算 Index 中没有重复值的数组            |
+
+
+### DataFrame
+
+DataFrame 既有行索引，又有列索引，它可以看做是由 Series 组成的字典。
+
+```python
+In [1]: df = pd.DataFrame({'A': 1.,
+   ...:         'B': pd.Timestamp('20130102'),
+   ...:         'C': pd.Series(1, index=list(range(4)), dtype='float32'),
+   ...:         'D': np.array([3] * 4, dtype='int32'),
+   ...:         'E': pd.Categorical(["test", "train", "test", "train"]),
+   ...:         'F': 'foo'})
+
+In [2]: df
+Out[2]: 
+     A          B    C  D      E    F
+0  1.0 2013-01-02  1.0  3   test  foo
+1  1.0 2013-01-02  1.0  3  train  foo
+2  1.0 2013-01-02  1.0  3   test  foo
+3  1.0 2013-01-02  1.0  3  train  foo
+```
+
+你也可以将一个二维数组直接传入 DataFrame，同时传入 columns 数组表示列索引。
+
+```python
+In [7]: data = [[2, 2, 2], [3, 3, 3]]
+
+In [8]: df = pd.DataFrame(data, columns = ['A', 'B', 'C'])
+
+In [9]: df
+Out[9]: 
+   A  B  C
+0  2  2  2
+1  3  3  3
+```
+
+还有一种方式是嵌套字典，外层字典的键值作为列，内层键则作为行索引：
+
+```python
+In [2]: pop = {'Nevada': {2001: 2.4, 2002: 2.9}, 'Ohio': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
+
+In [3]: df = pd.DataFrame(pop)
+
+In [4]: df
+Out[4]: 
+      Nevada  Ohio
+2001     2.4   1.7
+2002     2.9   3.6
+2000     NaN   1.5
+```
+
+可以传给 DataFrame 构造器的数据如下表所示：
+
+![](https://charmy-1256878123.cos.ap-nanjing.myqcloud.com/imgs/20221127223207.png)
+
+最后，你可以给 `df.index.name` 和 `df.columns.name` 设置名称，像 Series 一样。
+
+## 查看数据
+!!! note
+    注意，以下的大多数方法都是 DataFrame 的类方法，通过对象 df 来调用。只要少数方法是 pandas 的顶层方法，通过 pd 来调用。
+
+    并且，大多数的 df 方法都不会修改元数据对象，而是返回一个新的数据对象。这样做是为了保护元数据不被轻易修改。
+
+
+- df.head() 和 df.tail() 可以分别查看头部和尾部数据。
+- df.index 和 df.columns 可以分别查看索引和列名
+- df.to_numpy() 可以输出一个 numpy 数据类型。
+  - 因为 df 中可以存储不同类型的数据，如果这种 df 转成 numpy 的话，会自动变为 object 类型。如果 df 中存放的是基本的单一类型，转换会更快。
+- df.describe() 可以看查看摘要信息，包括每个列的统计信息。
+- df.T 可以将其转置
+- df.sort_values(by='B') 可以指定 df 按照某一列排序
+- df.sort_index(axis=1, ascending=False) 表示按轴降序排序。axis=1 表示对于每一行内的数据，将其按照列索引降序排列。
+
+## 选择数据
+
+!!! note
+    pandas 选择数据的方法有很多，都很方便。在正式生产环境中推荐使用 `.at`, `iat`, `.loc`, `iloc` 等优化后的方法。
+
+### Series
+
+```python
+In [1]: s = pd.Series([4, 7, -5, 3], index = ['d', 'b', 'a', 'c'])
+
+In [2]: s
+Out[2]: 
+d    4
+b    7
+a   -5
+c    3
+dtype: int64
+```
+
+对于 s 这样一个 Series，你可以通过 `s.at['a']` 或者 `s.loc['a']` 来访问 index 为 $a$ 的元素，而它对应的下标是 2，因此也可以通过 `s.iat[2]` 或者 `s.iloc[2]` 来访问。
+
+除此之外，你可以通过索引列表，批量访问多个元素：
+
+```python
+In [3]: s[['a', 'b', 'c']]
+Out[3]: 
+a   -5
+b    7
+c    3
+dtype: int64
+```
+
+又或者通过 Python 的切片：
+
+```python
+In [4]: s[1:]
+Out[4]: 
+b    7
+a   -5
+c    3
+dtype: int64
+```
+
+还有更厉害的是，通过布尔索引，返回 s 中所有大于 0 的元素：
+```python
+In [6]: s[s > 0]
+Out[6]: 
+d    4
+b    7
+c    3
+dtype: int64
+```
+
+
+### DataFrame
+
+Pandas 的每一个列是一个 Series，可以通过类似字典的方式去访问：
+
+```python
+In [24]: data = {'state': ['Ohio', 'Ohio', 'Ohio', 'Nevada', 'Nevada', 'Nevada'], 'year': [2000, 2001, 2002, 2001, 2002, 2003], 'pop': [1.5, 1.7, 3.6, 2.4, 2.9, 3.2]}
+
+In [25]: df = pd.DataFrame(data)
+
+In [26]: df
+Out[26]: 
+    state  year  pop
+0    Ohio  2000  1.5
+1    Ohio  2001  1.7
+2    Ohio  2002  3.6
+3  Nevada  2001  2.4
+4  Nevada  2002  2.9
+5  Nevada  2003  3.2
+
+In [27]: df['state']
+Out[27]: 
+0      Ohio
+1      Ohio
+2      Ohio
+3    Nevada
+4    Nevada
+5    Nevada
+Name: state, dtype: object
+```
+
+但是如果要访问行，需要使用 `loc` 和 `iloc`
+
+```python
+In [45]: df.loc[0]
+Out[45]: 
+state    Ohio
+year     2000
+pop       1.5
+Name: 0, dtype: object
+
+In [50]: df.loc[0, 'state' : 'year']
+Out[50]: 
+state    Ohio
+year     2000
+Name: 0, dtype: object
+
+In [51]: df.iloc[0, 0:2]
+Out[51]: 
+state    Ohio
+year     2000
+Name: 0, dtype: object
+
+In [52]: df.iloc[0, [0, 1]]
+Out[52]: 
+state    Ohio
+year     2000
+Name: 0, dtype: object
+```
+
+`loc` 和 `iloc` 的区别就是能否通过标签来访问，`iloc` 只能通过数字下标来访问。他们都支持切片的访问方法。
+
+`at` 和 `iat` 只能访问单个元素，例如 `df.at[0, 'state']`，`df.iat[0, 0]`。
+
+
+!!! info 布尔索引
+    布尔索引是一个非常好用的功能
+    ```python
+    In [54]: df
+    Out[54]: 
+        state  year  pop
+    0    Ohio  2000  1.5
+    1    Ohio  2001  1.7
+    2    Ohio  2002  3.6
+    3  Nevada  2001  2.4
+    4  Nevada  2002  2.9
+    5  Nevada  2003  3.2
+
+    In [55]: df[df['year'] > 2001]
+    Out[55]: 
+        state  year  pop
+    2    Ohio  2002  3.6
+    4  Nevada  2002  2.9
+    5  Nevada  2003  3.2
+
+    In [56]: df[df['state'].isin(['Ohio'])]
+    Out[56]: 
+    state  year  pop
+    0  Ohio  2000  1.5
+    1  Ohio  2001  1.7
+    2  Ohio  2002  3.6
+    ```
+
+    如果遇到需要多个条件筛选时，可以用 `&`，`|`，`~` 等将他们链接起来。
+
+
+## 赋值
+
+对于 Pandas 对象 df：
+
+1. `df['E'] = s`，其中 s 是 Series 对象，Index 会自动对齐（相当于 df 与 s 根据 index 做 left join）。
+2. `df.at[0, 'A'] = 0`，按照标签赋值。
+3. `df.iat[0, 1] = 0`，按位置赋值。
+4. `df.loc[:, 'D'] = np.array([5] * len(df))`, 按 numpy 数组赋值。
+5. `df[df > 0] = -df`，用 where 条件赋值。
+
+## 缺失值
+
+Pandas 使用 np.nan 表示缺失值。计算时，默认不包含空值。通过 reindex，df 可以在副本上更改、添加、删除指定轴的索引。
+
+- `df.dropna(how = 'any')`，删除所有含缺失值的行，返回副本。
+- `df.fillna(value = 5)`，填充缺失值，返回副本。
+- `pd.isna(df)` 或者 `df.isna()`，返回 nan 值的布尔掩码。
+
+
+## 运算
+
+一般情况下，运算时排除缺失值。
+
+1. `df.mean()` 各列的平均值，`df.mean(1)` 各行的平均值
+
+
+## 时间序列
+
+date_range 可以很方便的生成本地时间序列，resample 可以根据指定频率聚合数据。
+
+```python
+In [1]: rng = pd.date_range('1/1/2012', periods=100, freq='S')
+
+In [2]: ts = pd.Series(np.random.randint(0, 500, len(rng)), index=rng)
+
+In [3]: ts.resample('1Min').sum()
+Out[3]: 
+2012-01-01 00:00:00    15439
+2012-01-01 00:01:00     9327
+Freq: T, dtype: int64
+```
+
+时区表示：
+```python
+In [4]: rng = pd.date_range('3/6/2022 00:00:00', periods = 5, freq = 'D')
+
+In [5]: ts = pd.Series(np.random.randn(len(rng)), rng)
+
+In [6]: ts_utc = ts.tz_localize('UTC')
+
+In [7]: ts_utc
+Out[7]: 
+2022-03-06 00:00:00+00:00    1.185089
+2022-03-07 00:00:00+00:00   -0.537285
+2022-03-08 00:00:00+00:00    0.802029
+2022-03-09 00:00:00+00:00   -0.047596
+2022-03-10 00:00:00+00:00   -0.646866
+Freq: D, dtype: float64
+```
+
+转换成其他时区：
+```python
+In [8]: ts_utc.tz_convert('US/Eastern')
+Out[8]: 
+2012-03-05 19:00:00-05:00    0.464000
+2012-03-06 19:00:00-05:00    0.227371
+2012-03-07 19:00:00-05:00   -0.496922
+2012-03-08 19:00:00-05:00    0.306389
+2012-03-09 19:00:00-05:00   -2.290613
+Freq: D, dtype: float64
+```
+
+
+
+
+
+
+
+
 
 ## 基础部分
 
 ```python linenums="1"
-import pandas as pd
-import numpy as np
+
 
 # 查看版本
 print(pd.__version__)

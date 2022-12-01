@@ -103,6 +103,8 @@ nav:
     - 比赛记录: "record.md"
   - LeetCode:
     - 周赛:
+      - 第 321 场周赛: "LeetCode/周赛/第321场周赛.md"
+      - 第 320 场周赛: "LeetCode/周赛/第320场周赛.md"
       - 第 319 场周赛: "LeetCode/周赛/第319场周赛.md"
       - 第 318 场周赛: "LeetCode/周赛/第318场周赛.md"
       - 第 317 场周赛: "LeetCode/周赛/第317场周赛.md"
@@ -152,6 +154,13 @@ nav:
     - time模块: "Python/time模块.md"
     - datetime模块: "Python/datetime模块.md"
     - Pandas模块: "Python/Pandas模块.md"
+    - matplotlib模块: "Python/matplotlib模块.md"
+  - Research:
+    - 时间序列预测: "Research/时序预测.md"
+  - 杂七杂八:
+    - Matjax公式汇总: "Zaqizaba/mathjax.md"
+    - markdown: "Zaqizaba/markdown.md"
+    - git: "Zaqizaba/git.md"
   - 其他:
     - 董宇辉老师语录: "other/董宇辉老师语录.md"
     - 戴建业：如何活出自我: "other/戴建业.md"
