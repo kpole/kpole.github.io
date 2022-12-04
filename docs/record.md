@@ -1,9 +1,16 @@
 
 
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+
+
+
 === "LeetCode"
+
+    <div id="main" style="width: 800px;height:300px;"></div>
 
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 322 场周赛](https://leetcode.cn/contest/weekly-contest-322/ranking/) | 17(37) | 0:01:51 | 0:06:52 | 0:18:57 | 0:30:56 |
     | [第 321 场周赛](https://leetcode.cn/contest/weekly-contest-321/ranking/) | 74(158) | 0:01:20 | 0:02:43 | 0:06:53 | 0:17:36 :lady_beetle: 1 |
     | [第 320 场周赛](https://leetcode.cn/contest/weekly-contest-320/ranking/) | 38(90) | 0:02:13 | 0:06:47 | 0:11:35 | 0:38:29 |
     | [第 91 场双周赛](https://leetcode.cn/contest/biweekly-contest-91/) | virtual | * | * | * | * |
@@ -26,3 +33,49 @@
     | Name      | rank | A | B | C | D | E | F | G | Ex |
     | :---------- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
     | [ABC 267](https://atcoder.jp/contests/abc267/tasks) | 406 | 1:57 | 7:16 | 11:31 | 15:23 | 26:34 | 84:35 (5) | | |
+
+
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'LeetCode 周赛排名曲线'
+        },
+        tooltip: {},
+        legend: {
+            data: ['美服排名', '国服排名']
+        },
+        xAxis: {
+            data: [...Array(323 - 308).keys()].map((el, i) => 308 + i),
+            name: '周赛'
+        },
+        yAxis: {
+            type: 'value',
+            name: '排名'
+        },
+        series: [
+            {
+                name: '美服排名',
+                type: 'line',
+                data: [
+                    439, 68, 38, 7, 7, 27, 48, 695, 291, 166, 87, 274, 90, 158, 37
+                ],
+                areaStyle: {}
+            },
+            {
+                name: '国服排名',
+                type: 'line',
+                data: [
+                    214, 39, 14, 2, 2, 13, 25, 315, 138, 84, 50, 130, 38, 74, 17
+                ],
+                areaStyle: {}
+            } 
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
