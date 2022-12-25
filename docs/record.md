@@ -10,6 +10,9 @@
 
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 325 场周赛](https://leetcode.cn/contest/weekly-contest-325/ranking/) | 87(153) | 0:03:17 | 0:34:12 :lady_beetle: 3 |0:20:34 | 0:25:45 |
+    | [第 324 场周赛](https://leetcode.cn/contest/weekly-contest-324/ranking/) | 625(1611) | 0:04:56 :lady_beetle: 1| 0:07:32 :lady_beetle: 1|| 0:27:47 :lady_beetle: 1 |
+    | [第 323 场周赛](https://leetcode.cn/contest/weekly-contest-323/ranking/) | 41(82) | 0:02:12 | 0:06:02 | 0:30:07 | 0:24:57 |
     | [第 322 场周赛](https://leetcode.cn/contest/weekly-contest-322/ranking/) | 17(37) | 0:01:51 | 0:06:52 | 0:18:57 | 0:30:56 |
     | [第 321 场周赛](https://leetcode.cn/contest/weekly-contest-321/ranking/) | 74(158) | 0:01:20 | 0:02:43 | 0:06:53 | 0:17:36 :lady_beetle: 1 |
     | [第 320 场周赛](https://leetcode.cn/contest/weekly-contest-320/ranking/) | 38(90) | 0:02:13 | 0:06:47 | 0:11:35 | 0:38:29 |
@@ -61,7 +64,7 @@
                 name: '美服排名',
                 type: 'line',
                 data: [
-                    439, 68, 38, 7, 7, 27, 48, 695, 291, 166, 87, 274, 90, 158, 37
+                    439, 68, 38, 7, 7, 27, 48, 695, 291, 166, 87, 274, 90, 158, 37, 82
                 ],
                 areaStyle: {}
             },
@@ -69,7 +72,7 @@
                 name: '国服排名',
                 type: 'line',
                 data: [
-                    214, 39, 14, 2, 2, 13, 25, 315, 138, 84, 50, 130, 38, 74, 17
+                    214, 39, 14, 2, 2, 13, 25, 315, 138, 84, 50, 130, 38, 74, 17, 41
                 ],
                 areaStyle: {}
             } 
