@@ -2,7 +2,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
 
-
+<!--  
+ 错误提交图标：:lady_beetle:  
+-->
 
 === "LeetCode"
 
@@ -10,6 +12,8 @@
 
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 327 场周赛](https://leetcode.cn/contest/weekly-contest-327/ranking/) | 79(185) | 0:01:06 | 0:04:09 | 0:12:45 :lady_beetle: 2 | 0:55:02 :lady_beetle: 1 |
+    | [第 326 场周赛](https://leetcode.cn/contest/weekly-contest-326/ranking/) | 92(152) | 0:01:03 | 0:02:23  | 0:05:28 | 0:11:45 :lady_beetle: 1 |
     | [第 325 场周赛](https://leetcode.cn/contest/weekly-contest-325/ranking/) | 87(153) | 0:03:17 | 0:34:12 :lady_beetle: 3 |0:20:34 | 0:25:45 |
     | [第 324 场周赛](https://leetcode.cn/contest/weekly-contest-324/ranking/) | 625(1611) | 0:04:56 :lady_beetle: 1| 0:07:32 :lady_beetle: 1|| 0:27:47 :lady_beetle: 1 |
     | [第 323 场周赛](https://leetcode.cn/contest/weekly-contest-323/ranking/) | 41(82) | 0:02:12 | 0:06:02 | 0:30:07 | 0:24:57 |
