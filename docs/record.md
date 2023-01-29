@@ -4,14 +4,13 @@
 
 <!--  
  错误提交图标：:lady_beetle:  
+ <div id="main" style="width: 800px;height:300px;"></div>
 -->
 
 === "LeetCode"
-
-    <div id="main" style="width: 800px;height:300px;"></div>
-
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 330 场周赛](https://leetcode.cn/contest/weekly-contest-330/ranking/) | 11(36) | 0:02:11 :lady_beetle: 1 |	0:05:11 | 0:22:37 | 0:27:48 |
     | [第 329 场周赛](https://leetcode.cn/contest/weekly-contest-329/ranking/) | 10(26) | 0:00:52 | 0:02:21 | 0:09:27 | 0:14:27 |
     | [第 328 场周赛](https://leetcode.cn/contest/weekly-contest-328/ranking/) | 9(25) | 0:01:01 | 0:04:18 | 0:11:19 | 0:23:39 |
     | [第 327 场周赛](https://leetcode.cn/contest/weekly-contest-327/ranking/) | 79(185) | 0:01:06 | 0:04:09 | 0:12:45 :lady_beetle: 2 | 0:55:02 :lady_beetle: 1 |
