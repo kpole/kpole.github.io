@@ -2261,7 +2261,7 @@
 <h2 id="d">D 统计上升四元组</h2>
 <p>四元组 <span class="arithmatex">\((i, j, k, l)\)</span>，需满足条件 <span class="arithmatex">\(\textit{nums}[i] &lt; \textit{nums}[k] &lt; \textit{nums}[j] &lt; \textit{nums}[l]\)</span>。</p>
 <p>对于每个 <span class="arithmatex">\(l\)</span>，求解前面有多少个 <span class="arithmatex">\(j\)</span> 满足 <span class="arithmatex">\(\textit{nums}[i] &lt; \textit{nums}[k] &lt; \textit{nums}[j]\)</span> 即可。</p>
-<p>从小到大遍历 <span class="arithmatex">\(k\)</span>，然后在从小到大遍历 <span class="arithmatex">\(j\)</span>，过程中记录前面有多少个小于 <span class="arithmatex">\(\textit{nums}[k]\)</span> 的元素，这样即可对于每个 <span class="arithmatex">\(j\)</span> 所组成的三元组个数。</p>
+<p>从小到大遍历 <span class="arithmatex">\(k\)</span>，然后在从小到大遍历 <span class="arithmatex">\(j\)</span>，过程中记录前面有多少个小于 <span class="arithmatex">\(\textit{nums}[k]\)</span> 的元素，这样即可对于每个 <span class="arithmatex">\(j\)</span> 求出所组成的三元组 <span class="arithmatex">\((i, j, k)\)</span> 的个数。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
