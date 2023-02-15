@@ -103,6 +103,7 @@ nav:
     - 比赛记录: "record.md"
   - LeetCode:
     - 周赛:
+      - 第 332 场周赛: "LeetCode/周赛/第332场周赛.md"
       - 第 331 场周赛: "LeetCode/周赛/第331场周赛.md"
       - 第 330 场周赛: "LeetCode/周赛/第330场周赛.md"
       - 第 329 场周赛: "LeetCode/周赛/第329场周赛.md"
@@ -171,6 +172,8 @@ nav:
     - Matjax公式汇总: "Zaqizaba/mathjax.md"
     - markdown: "Zaqizaba/markdown.md"
     - git: "Zaqizaba/git.md"
+    - docker: "Zaqizaba/docker.md"
+    - redis: "Zaqizaba/redis.md"
   - 其他:
     - 董宇辉老师语录: "other/董宇辉老师语录.md"
     - 戴建业：如何活出自我: "other/戴建业.md"
