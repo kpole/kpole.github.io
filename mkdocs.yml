@@ -103,6 +103,7 @@ nav:
     - 比赛记录: "record.md"
   - LeetCode:
     - 周赛:
+      - 第 333 场周赛: "LeetCode/周赛/第333场周赛.md"
       - 第 332 场周赛: "LeetCode/周赛/第332场周赛.md"
       - 第 331 场周赛: "LeetCode/周赛/第331场周赛.md"
       - 第 330 场周赛: "LeetCode/周赛/第330场周赛.md"
