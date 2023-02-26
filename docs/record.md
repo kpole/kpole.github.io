@@ -10,6 +10,7 @@
 === "LeetCode"
     | Name      | rank | T1 | T2 | T3 | T4|
     | :---------- | :--- | :--- | :--- | :--- | :--- |
+    | [第 334 场周赛](https://leetcode.cn/contest/weekly-contest-334/ranking/) | 362(864) | 0:01:37 | 0:03:51 | | 0:36:28
     | [第 333 场周赛](https://leetcode.cn/contest/weekly-contest-333/ranking/) | 118(258) | 0:17:05 | 0:21:58 | 0:37:36 | 1:10:28 :lady_beetle: 5 |
     | [第 332 场周赛](https://leetcode.cn/contest/weekly-contest-332/ranking/) | 28(69) | 0:02:31 | 0:05:50 :lady_beetle: 1 | 0:12:20 | 0:28:48 :lady_beetle: 2 |
     | [第 331 场周赛](https://leetcode.cn/contest/weekly-contest-331/ranking/) | 120(288) | 0:02:55 | 0:05:50 | 0:11:41 :lady_beetle: 1 | 0:31:00 :lady_beetle: 3 |
