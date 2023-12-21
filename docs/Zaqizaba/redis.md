@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## 简介
 
 REmote Dictionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。

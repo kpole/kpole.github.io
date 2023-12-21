@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 本文为 [Git教程 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600) 的学习笔记，仅供学习参考之用。
 
 ## 安装

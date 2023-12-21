@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Markdown 的使用
 
 ## 编辑器

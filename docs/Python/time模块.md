@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 内置的 time 模块可以读取系统时钟的当前时间。在 time 模块中，`time.time()` 和 `time.sleep()` 是最有用的模块。除此之外，`time.mktime()` 也很有用。
 
 ### time.time()

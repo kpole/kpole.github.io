@@ -1,3 +1,6 @@
+---
+comments: true
+---
 
 安装：`Plug 'preservim/nerdtree'`
 

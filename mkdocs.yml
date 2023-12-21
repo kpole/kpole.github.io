@@ -6,6 +6,8 @@ repo_url: https://github.com/Kpole/Kpole.github.io
 repo_name: "kpole/kpole.github.io"
 
 theme:
+  name: material
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/git-alt
     admonition:
@@ -21,7 +23,7 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  name: material
+  
   logo: assets/images/favicon.png
   favicon: assets/images/favicon.png
   features:
@@ -180,6 +182,7 @@ nav:
     - Matjax公式汇总: "Zaqizaba/mathjax.md"
     - markdown: "Zaqizaba/markdown.md"
     - git: "Zaqizaba/git.md"
+    - 正则表达式: "Zaqizaba/正则表达式.md"
     - docker: "Zaqizaba/docker.md"
     - redis: "Zaqizaba/redis.md"
   - 其他:
@@ -188,7 +191,6 @@ nav:
     - 罗翔老师语录: "other/罗翔老师语录.md"
     - 我想和你虚度时光: "other/我想和你虚度时光.md"
     - 《第七天》: "other/第七天.md"
-    - 正则表达式: "other/正则表达式.md"
     - MBTI: "other/MBTI.md"
     - 正念: "other/正念.md"
     - 习得性无助: "other/习得性无助.md"

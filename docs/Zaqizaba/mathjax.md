@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mathjax学习笔记
 
 ## 基础
