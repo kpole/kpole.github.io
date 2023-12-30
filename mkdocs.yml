@@ -93,6 +93,13 @@ plugins:
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
+  - blog:
+      archive: false
+  - search:
+      enabled: false
+      lang: 
+          - en
+          - zh
 
 extra:
   social:
@@ -186,6 +193,8 @@ nav:
     - docker: "Zaqizaba/docker.md"
     - redis: "Zaqizaba/redis.md"
   - 其他:
+    - 心理学:
+      - 基础心理学: "other/心理学/基础心理学.md"
     - 董宇辉老师语录: "other/董宇辉老师语录.md"
     - 戴建业：如何活出自我: "other/戴建业.md"
     - 罗翔老师语录: "other/罗翔老师语录.md"
