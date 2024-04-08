@@ -112,96 +112,100 @@ nav:
   - Home:
     - Home: "index.md"
     - 比赛记录: "record.md"
-  - LeetCode:
-    - 周赛:
-      - 第 357 场周赛: "LeetCode/周赛/第357场周赛.md"
-      - 第 336 场周赛: "LeetCode/周赛/第336场周赛.md"
-      - 第 335 场周赛: "LeetCode/周赛/第335场周赛.md"
-      - 第 334 场周赛: "LeetCode/周赛/第334场周赛.md"
-      - 第 333 场周赛: "LeetCode/周赛/第333场周赛.md"
-      - 第 332 场周赛: "LeetCode/周赛/第332场周赛.md"
-      - 第 331 场周赛: "LeetCode/周赛/第331场周赛.md"
-      - 第 330 场周赛: "LeetCode/周赛/第330场周赛.md"
-      - 第 329 场周赛: "LeetCode/周赛/第329场周赛.md"
-      - 第 328 场周赛: "LeetCode/周赛/第328场周赛.md"
-      - 第 327 场周赛: "LeetCode/周赛/第327场周赛.md"
-      - 第 326 场周赛: "LeetCode/周赛/第326场周赛.md"
-      - 第 325 场周赛: "LeetCode/周赛/第325场周赛.md"
-      - 第 324 场周赛: "LeetCode/周赛/第324场周赛.md"
-      - 第 323 场周赛: "LeetCode/周赛/第323场周赛.md"
-      - 第 322 场周赛: "LeetCode/周赛/第322场周赛.md"
-      - 第 321 场周赛: "LeetCode/周赛/第321场周赛.md"
-      - 第 320 场周赛: "LeetCode/周赛/第320场周赛.md"
-      - 第 319 场周赛: "LeetCode/周赛/第319场周赛.md"
-      - 第 318 场周赛: "LeetCode/周赛/第318场周赛.md"
-      - 第 317 场周赛: "LeetCode/周赛/第317场周赛.md"
-      - 第 316 场周赛: "LeetCode/周赛/第316场周赛.md"
-      - 第 315 场周赛: "LeetCode/周赛/第315场周赛.md"
-      - 第 314 场周赛: "LeetCode/周赛/第314场周赛.md"
-      - 第 313 场周赛: "LeetCode/周赛/第313场周赛.md"
-      - 第 312 场周赛: "LeetCode/周赛/第312场周赛.md"
-      - 第 311 场周赛: "LeetCode/周赛/第311场周赛.md"
-      - 第 310 场周赛: "LeetCode/周赛/第310场周赛.md"
-      - 第 309 场周赛: "LeetCode/周赛/第309场周赛.md"
-      - 第 308 场周赛: "LeetCode/周赛/第308场周赛.md"
-      - 第 307 场周赛: "LeetCode/周赛/第307场周赛.md"
-    - 双周赛:
-      - 第 110 场双周赛: "LeetCode/双周赛/第110场双周赛.md"
-      - 第 91 场双周赛: "LeetCode/双周赛/第91场双周赛.md"
-      - 第 89 场双周赛: "LeetCode/双周赛/第89场双周赛.md"
-      - 第 88 场双周赛: "LeetCode/双周赛/第88场双周赛.md"
-      - 第 87 场双周赛: "LeetCode/双周赛/第87场双周赛.md"
-      - 第 86 场双周赛: "LeetCode/双周赛/第86场双周赛.md"
-    - 基础:
-      - 思维: "LeetCode/01_基础/思维.md"
-      - 贪心: "LeetCode/01_基础/贪心.md"
-    - 数据结构:
-      - 哈希:
-        - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
-      - 栈:
-        - 解析表达式专题: "LeetCode/02_数据结构/栈/解析表达式专题.md"
-        - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
-    - 动态规划: "LeetCode/03_动态规划/index.md"
-    - 字符串: "LeetCode/04_字符串/index.md"
-    - 搜索: 
-      - 折半搜索: "LeetCode/05_搜索/折半搜索.md"
-    - 图论: "LeetCode/06_图论/index.md"
-    - 杂项: "LeetCode/07_杂项/index.md"
-  - AtCoder:
-    - ABC:
-      - ABC 267: "AtCoder/ABC/267.md"
-      - ABC 266: "AtCoder/ABC/266.md"
-      - ABC 265: "AtCoder/ABC/265.md"
-  - Linux:
-    - vim:
-      - 插件:
+  - 算法竞赛:
+    - LeetCode:
+      - 周赛:
+        - 第 357 场周赛: "LeetCode/周赛/第357场周赛.md"
+        - 第 336 场周赛: "LeetCode/周赛/第336场周赛.md"
+        - 第 335 场周赛: "LeetCode/周赛/第335场周赛.md"
+        - 第 334 场周赛: "LeetCode/周赛/第334场周赛.md"
+        - 第 333 场周赛: "LeetCode/周赛/第333场周赛.md"
+        - 第 332 场周赛: "LeetCode/周赛/第332场周赛.md"
+        - 第 331 场周赛: "LeetCode/周赛/第331场周赛.md"
+        - 第 330 场周赛: "LeetCode/周赛/第330场周赛.md"
+        - 第 329 场周赛: "LeetCode/周赛/第329场周赛.md"
+        - 第 328 场周赛: "LeetCode/周赛/第328场周赛.md"
+        - 第 327 场周赛: "LeetCode/周赛/第327场周赛.md"
+        - 第 326 场周赛: "LeetCode/周赛/第326场周赛.md"
+        - 第 325 场周赛: "LeetCode/周赛/第325场周赛.md"
+        - 第 324 场周赛: "LeetCode/周赛/第324场周赛.md"
+        - 第 323 场周赛: "LeetCode/周赛/第323场周赛.md"
+        - 第 322 场周赛: "LeetCode/周赛/第322场周赛.md"
+        - 第 321 场周赛: "LeetCode/周赛/第321场周赛.md"
+        - 第 320 场周赛: "LeetCode/周赛/第320场周赛.md"
+        - 第 319 场周赛: "LeetCode/周赛/第319场周赛.md"
+        - 第 318 场周赛: "LeetCode/周赛/第318场周赛.md"
+        - 第 317 场周赛: "LeetCode/周赛/第317场周赛.md"
+        - 第 316 场周赛: "LeetCode/周赛/第316场周赛.md"
+        - 第 315 场周赛: "LeetCode/周赛/第315场周赛.md"
+        - 第 314 场周赛: "LeetCode/周赛/第314场周赛.md"
+        - 第 313 场周赛: "LeetCode/周赛/第313场周赛.md"
+        - 第 312 场周赛: "LeetCode/周赛/第312场周赛.md"
+        - 第 311 场周赛: "LeetCode/周赛/第311场周赛.md"
+        - 第 310 场周赛: "LeetCode/周赛/第310场周赛.md"
+        - 第 309 场周赛: "LeetCode/周赛/第309场周赛.md"
+        - 第 308 场周赛: "LeetCode/周赛/第308场周赛.md"
+        - 第 307 场周赛: "LeetCode/周赛/第307场周赛.md"
+      - 双周赛:
+        - 第 110 场双周赛: "LeetCode/双周赛/第110场双周赛.md"
+        - 第 91 场双周赛: "LeetCode/双周赛/第91场双周赛.md"
+        - 第 89 场双周赛: "LeetCode/双周赛/第89场双周赛.md"
+        - 第 88 场双周赛: "LeetCode/双周赛/第88场双周赛.md"
+        - 第 87 场双周赛: "LeetCode/双周赛/第87场双周赛.md"
+        - 第 86 场双周赛: "LeetCode/双周赛/第86场双周赛.md"
+      - 基础:
+        - 思维: "LeetCode/01_基础/思维.md"
+        - 贪心: "LeetCode/01_基础/贪心.md"
+      - 数据结构:
+        - 哈希:
+          - 树哈希: "LeetCode/02_数据结构/哈希/树哈希.md"
+        - 栈:
+          - 解析表达式专题: "LeetCode/02_数据结构/栈/解析表达式专题.md"
+          - 括号匹配专题: "LeetCode/02_数据结构/栈/括号匹配专题.md"
+      - 动态规划: "LeetCode/03_动态规划/index.md"
+      - 字符串: "LeetCode/04_字符串/index.md"
+      - 搜索: 
+        - 折半搜索: "LeetCode/05_搜索/折半搜索.md"
+      - 图论: "LeetCode/06_图论/index.md"
+      - 杂项: "LeetCode/07_杂项/index.md"
+    - AtCoder:
+      - ABC:
+        - ABC 267: "AtCoder/ABC/267.md"
+        - ABC 266: "AtCoder/ABC/266.md"
+        - ABC 265: "AtCoder/ABC/265.md"
+  - 计算机科学:
+    - Linux:
+      - vim:
         - NERDTree: "Linux/vim/plugins/nerdtree.md"
-  - C++:
-    - chrono: "CPP/chrono.md"
-  - Python:
-    - time模块: "Python/time模块.md"
-    - datetime模块: "Python/datetime模块.md"
-    - Pandas模块: "Python/Pandas模块.md"
-    - matplotlib模块: "Python/matplotlib模块.md"
-  - Research:
-    - 时间序列预测: "Research/时序预测.md"
-  - 杂七杂八:
-    - Matjax公式汇总: "Zaqizaba/mathjax.md"
-    - markdown: "Zaqizaba/markdown.md"
-    - git: "Zaqizaba/git.md"
-    - 正则表达式: "Zaqizaba/正则表达式.md"
-    - docker: "Zaqizaba/docker.md"
-    - redis: "Zaqizaba/redis.md"
-  - 其他:
-    - 心理学:
-      - 基础心理学: "other/心理学/基础心理学.md"
-    - 董宇辉老师语录: "other/董宇辉老师语录.md"
-    - 戴建业：如何活出自我: "other/戴建业.md"
-    - 罗翔老师语录: "other/罗翔老师语录.md"
-    - 我想和你虚度时光: "other/我想和你虚度时光.md"
-    - 《第七天》: "other/第七天.md"
-    - MBTI: "other/MBTI.md"
-    - 正念: "other/正念.md"
-    - 习得性无助: "other/习得性无助.md"
-    - 什么是爱情: "other/什么是爱情.md"
-    - 小鹤双拼: "other/小鹤双拼.md"
+    - C++:
+      - chrono: "CPP/chrono.md"
+    - Python:
+      - time模块: "Python/time模块.md"
+      - datetime模块: "Python/datetime模块.md"
+      - Pandas模块: "Python/Pandas模块.md"
+      - matplotlib模块: "Python/matplotlib模块.md"
+    - tool:
+      - Matjax公式汇总: "tool/mathjax.md"
+      - markdown: "tool/markdown.md"
+      - git: "tool/git.md"
+      - 正则表达式: "tool/正则表达式.md"
+      - docker: "tool/docker.md"
+      - redis: "tool/redis.md"
+      - 小鹤双拼: "tool/小鹤双拼.md"
+  - 社会科学:
+    - 关于心理学:
+      - 心理学:
+        - 基础心理学: "社会科学/关于心理学/心理学/基础心理学.md"
+      - 习得性无助: "社会科学/关于心理学/习得性无助.md"
+      - 正念: "社会科学/关于心理学/正念.md"
+      - MBTI: "社会科学/关于心理学/MBTI.md"
+    - 关于爱情:
+      - 我想和你虚度时光: "社会科学/关于爱情/我想和你虚度时光.md"
+      - 什么是爱情: "社会科学/关于爱情/什么是爱情.md"
+    - 关于人生:
+      - 董宇辉老师语录: "社会科学/关于人生/董宇辉老师语录.md"
+      - 戴建业：如何活出自我: "社会科学/关于人生/戴建业.md"
+      - 罗翔老师语录: "社会科学/关于人生/罗翔老师语录.md"
+      - 《第七天》: "社会科学/关于人生/第七天.md"
+    
+    
