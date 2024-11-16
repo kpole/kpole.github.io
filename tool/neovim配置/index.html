@@ -10,13 +10,13 @@
         <meta name="author" content="kpole">
       
       
-        <link rel="canonical" href="https://kpole.github.io/tool/mathjax/">
+        <link rel="canonical" href="https://kpole.github.io/tool/neovim%E9%85%8D%E7%BD%AE/">
       
       
-        <link rel="prev" href="../cnblog_github_io/">
+        <link rel="prev" href="../../Python/matplotlib%E6%A8%A1%E5%9D%97/">
       
       
-        <link rel="next" href="../markdown/">
+        <link rel="next" href="../cnblog_github_io/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Matjax公式汇总 - 今夕的wiki</title>
+        <title>neovim 配置 - 今夕的wiki</title>
       
     
     
@@ -119,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mathjax" class="md-skip">
+        <a href="#neovim" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Matjax公式汇总
+              neovim 配置
             
           </span>
         </div>
@@ -749,10 +749,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../neovim%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    neovim 配置
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -761,6 +781,182 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      install
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      插件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="插件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvim-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      nvim-tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bufferline" class="md-nav__link">
+    <span class="md-ellipsis">
+      bufferline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telescope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telescope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto-pairs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvim-treesitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvim-Treesitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvim-comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvim-comment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which-key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      主题插件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      LSP 配置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      剪切板配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="剪切板配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      终端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -791,30 +987,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Matjax公式汇总
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mathjax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -823,209 +999,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      基础
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="基础">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      希腊字母
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      上标与下标
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      括号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      求和与积分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分式和根式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      字体
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊函数和符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      顶部符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      声调/变音符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="数学公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 界限
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 微分以及导数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 模算数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 根号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 运算符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 集合
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      关系符号
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1251,19 +1224,91 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
-      基础
+      install
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="基础">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      插件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="插件">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#nvim-tree" class="md-nav__link">
     <span class="md-ellipsis">
-      希腊字母
+      nvim-tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bufferline" class="md-nav__link">
+    <span class="md-ellipsis">
+      bufferline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telescope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telescope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto-pairs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvim-treesitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvim-Treesitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvim-comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvim-comment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which-key
     </span>
   </a>
   
@@ -1272,25 +1317,40 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      上标与下标
+      主题插件
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp" class="md-nav__link">
     <span class="md-ellipsis">
-      括号
+      LSP 配置
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      剪切板配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="剪切板配置">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      求和与积分
+      终端
     </span>
   </a>
   
@@ -1299,137 +1359,23 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      分式和根式
+      
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      字体
+      参考资料
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊函数和符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      顶部符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      声调/变音符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="数学公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 界限
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 微分以及导数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 模算数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 根号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 运算符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 集合
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      关系符号
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1451,370 +1397,255 @@
   
 
 
-<h1 id="mathjax">Mathjax学习笔记</h1>
-<h2 id="_1">基础</h2>
-<ul>
-<li>displayed 公式： 分隔符<code>$$ ... $$</code>  或者 <code>\[...\]</code> </li>
-<li>inline 公式 <code>$...$</code> 或者 <code>(...)</code> </li>
-</ul>
-<h3 id="_2">希腊字母</h3>
+<h1 id="neovim">neovim 配置</h1>
+<blockquote>
+<p>前言</p>
+<p>本文主要介绍 neovim 的安装和推荐插件的配置和基本使用方法。写作本文，一是为了配置 neovim 时有所参考，二是为了更好的宣传 neovim。</p>
+<p>特此说明，在安装插件时可能会遇到各种各样的问题，一些常见的排查角度是：
+- neovim 版本是否符合要求？
+- 插件所依赖的环境是否安装成功？
+- glibc 版本是否太低？
+- 插件配置的代码与否有语法错误、路径错误？</p>
+</blockquote>
+<h2 id="install">install</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-LO<span class="w"> </span>https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz<span class="w"> </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/opt/nvim
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>tar<span class="w"> </span>-C<span class="w"> </span>/opt<span class="w"> </span>-xzf<span class="w"> </span>nvim-linux64.tar.gz
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PATH</span><span class="s2">:/opt/nvim-linux64/bin&quot;</span><span class="w"> </span><span class="c1"># in .bashrc or .zshrc</span>
+</code></pre></div>
+<p>最后一句 shell 命令将 nvim 的路径添加到 PATH 当中，要记得把命令添加到 .bashrc 中以长期生效。</p>
+<p>然后你就可以使用 nvim 来启动 nvim 了。</p>
+<h2 id="_1">配置方法</h2>
+<p>我的 nvim 配置在 <a href="https://github.com/kpole/dotfiles">https://github.com/kpole/dotfiles</a> 的 .config 目录中。目录结构如下：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>├── init.lua                            -- nvim 初始化
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── lazy-lock.json
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>└── lua                                 -- 关于 nvim 的配置
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    ├── colorscheme.lua                 -- 高亮配置
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    ├── config                          -- 插件配置
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    │   ├── bufferline.lua
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    │   ├── catppuccin.lua
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    │   ├── comment.lua
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    │   ├── log_highlight.lua
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    │   ├── lualine.lua
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    │   ├── nvim-cmp.lua
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    │   ├── nvim-tree.lua
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    │   ├── telescope.lua
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    │   ├── toggleterm.lua
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    │   └── _treesitter.lua
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    ├── keymaps.lua                     -- 全局快捷键配置
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    ├── lsp.lua                         -- LSP 配置
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    ├── options.lua                     -- 全局配置
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    └── plugins.lua                     -- 插件列表
+</code></pre></div></p>
+<p>每次安装插件，需要在 plugins.lua 中添加插件。如果插件需要详细配置，可以在 config 中添加相应的文件（文件名可自定义，但注意有些插件的配置文件名不能与插件同名，否则引入插件时会有问题），并在 plugins.lua 中引入。</p>
+<p>该文件目录参考来自：<a href="https://www.cnblogs.com/youngxhui/p/17730419.html">https://www.cnblogs.com/youngxhui/p/17730419.html</a>。这篇文章写的很好，如有需要，建议读者阅读。</p>
+<h2 id="_2">插件</h2>
+<p>插件可以使你的 nvim 如虎添翼。</p>
+<p>下表罗列出本文推荐安装的几款插件。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">名称</th>
-<th style="text-align: center;">大写</th>
-<th style="text-align: center;">Tex</th>
-<th style="text-align: center;">小写</th>
-<th style="text-align: center;">Tex</th>
+<th style="text-align: left;">插件名称</th>
+<th style="text-align: left;">作用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">alpha</td>
-<td style="text-align: center;"><span class="arithmatex">\(A\)</span></td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;"><span class="arithmatex">\(\alpha\)</span></td>
-<td style="text-align: center;">\alpha</td>
+<td style="text-align: left;">nvim-tree</td>
+<td style="text-align: left;">文件树目录</td>
 </tr>
 <tr>
-<td style="text-align: center;">beta</td>
-<td style="text-align: center;"><span class="arithmatex">\(B\)</span></td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;"><span class="arithmatex">\(\beta\)</span></td>
-<td style="text-align: center;">\beta</td>
+<td style="text-align: left;">bufferline</td>
+<td style="text-align: left;">文件 tab 栏</td>
 </tr>
 <tr>
-<td style="text-align: center;">gamma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Gamma\)</span></td>
-<td style="text-align: center;">\Gamma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\gamma\)</span></td>
-<td style="text-align: center;">\gammma</td>
+<td style="text-align: left;">Telescope</td>
+<td style="text-align: left;">文件查找、字段查找</td>
 </tr>
 <tr>
-<td style="text-align: center;">delta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Delta\)</span></td>
-<td style="text-align: center;">\Delta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\delta\)</span></td>
-<td style="text-align: center;">\delta</td>
+<td style="text-align: left;">auto-pairs</td>
+<td style="text-align: left;">括号匹配</td>
 </tr>
 <tr>
-<td style="text-align: center;">epslion</td>
-<td style="text-align: center;"><span class="arithmatex">\(E\)</span></td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;"><span class="arithmatex">\(\epsilon\)</span></td>
-<td style="text-align: center;">\epsilon</td>
-</tr>
-<tr>
-<td style="text-align: center;">zeta</td>
-<td style="text-align: center;"><span class="arithmatex">\(Z\)</span></td>
-<td style="text-align: center;">Z</td>
-<td style="text-align: center;"><span class="arithmatex">\(\zeta\)</span></td>
-<td style="text-align: center;">zeta</td>
-</tr>
-<tr>
-<td style="text-align: center;">eta</td>
-<td style="text-align: center;"><span class="arithmatex">\(H\)</span></td>
-<td style="text-align: center;">H</td>
-<td style="text-align: center;"><span class="arithmatex">\(\eta\)</span></td>
-<td style="text-align: center;">\eta</td>
-</tr>
-<tr>
-<td style="text-align: center;">theta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Theta\)</span></td>
-<td style="text-align: center;">\Theta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\theta\)</span></td>
-<td style="text-align: center;">\theta</td>
-</tr>
-<tr>
-<td style="text-align: center;">iota</td>
-<td style="text-align: center;"><span class="arithmatex">\(I\)</span></td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;"><span class="arithmatex">\(\iota\)</span></td>
-<td style="text-align: center;">\itoa</td>
-</tr>
-<tr>
-<td style="text-align: center;">kappa</td>
-<td style="text-align: center;"><span class="arithmatex">\(K\)</span></td>
-<td style="text-align: center;">K</td>
-<td style="text-align: center;"><span class="arithmatex">\(\kappa\)</span></td>
-<td style="text-align: center;">\kappa</td>
-</tr>
-<tr>
-<td style="text-align: center;">lambda</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Lambda\)</span></td>
-<td style="text-align: center;">\Lambda</td>
-<td style="text-align: center;"><span class="arithmatex">\(\lambda\)</span></td>
-<td style="text-align: center;">\lambda</td>
-</tr>
-<tr>
-<td style="text-align: center;">mu</td>
-<td style="text-align: center;"><span class="arithmatex">\(M\)</span></td>
-<td style="text-align: center;">M</td>
-<td style="text-align: center;"><span class="arithmatex">\(\mu\)</span></td>
-<td style="text-align: center;">\mu</td>
-</tr>
-<tr>
-<td style="text-align: center;">nu</td>
-<td style="text-align: center;"><span class="arithmatex">\(N\)</span></td>
-<td style="text-align: center;">N</td>
-<td style="text-align: center;"><span class="arithmatex">\(\nu\)</span></td>
-<td style="text-align: center;">\nu</td>
-</tr>
-<tr>
-<td style="text-align: center;">xi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Xi\)</span></td>
-<td style="text-align: center;">\Xi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\xi\)</span></td>
-<td style="text-align: center;">\xi</td>
-</tr>
-<tr>
-<td style="text-align: center;">omicron</td>
-<td style="text-align: center;"><span class="arithmatex">\(O\)</span></td>
-<td style="text-align: center;">O</td>
-<td style="text-align: center;"><span class="arithmatex">\(\omicron\)</span></td>
-<td style="text-align: center;">\omicron</td>
-</tr>
-<tr>
-<td style="text-align: center;">pi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Pi\)</span></td>
-<td style="text-align: center;">\Pi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\pi\)</span></td>
-<td style="text-align: center;">\pi</td>
-</tr>
-<tr>
-<td style="text-align: center;">rho</td>
-<td style="text-align: center;"><span class="arithmatex">\(P\)</span></td>
-<td style="text-align: center;">P</td>
-<td style="text-align: center;"><span class="arithmatex">\(\rho\)</span></td>
-<td style="text-align: center;">\rho</td>
-</tr>
-<tr>
-<td style="text-align: center;">sigma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Sigma\)</span></td>
-<td style="text-align: center;">\Sigma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\sigma\)</span></td>
-<td style="text-align: center;">\sigma</td>
-</tr>
-<tr>
-<td style="text-align: center;">tau</td>
-<td style="text-align: center;"><span class="arithmatex">\(T\)</span></td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"><span class="arithmatex">\(\tau\)</span></td>
-<td style="text-align: center;">\tau</td>
-</tr>
-<tr>
-<td style="text-align: center;">upsilon</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Upsilon\)</span></td>
-<td style="text-align: center;">\Upsilon</td>
-<td style="text-align: center;"><span class="arithmatex">\(\upsilon\)</span></td>
-<td style="text-align: center;">\upsilon</td>
-</tr>
-<tr>
-<td style="text-align: center;">psi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Psi\)</span></td>
-<td style="text-align: center;">\Psi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\psi\)</span></td>
-<td style="text-align: center;">\psi</td>
-</tr>
-<tr>
-<td style="text-align: center;">omega</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Omega\)</span></td>
-<td style="text-align: center;">\Omega</td>
-<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
-<td style="text-align: center;">\omega</td>
+<td style="text-align: left;">nvim-treesitter</td>
+<td style="text-align: left;">关键字匹配、高亮</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_3">上标与下标</h3>
+<h3 id="nvim-tree">nvim-tree</h3>
+<p>nvim-tree 是一个用于 Neovim 的文件资源管理器插件，提供树状目录视图，便于文件浏览和操作。它支持文件创建、删除、重命名、拖放等功能，并集成了 Git 状态显示。</p>
+<p>下载链接：<a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree/nvim-tree.lua: A file explorer tree for neovim written in lua (github.com)</a></p>
+<p>API列表：<a href="https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt">nvim-tree.lua/doc/nvim-tree-lua.txt at master · nvim-tree/nvim-tree.lua (github.com)</a></p>
+<p>使用 :NvimTreeOpen 可以调出文件树窗口，使用 g? 可以展示快捷键帮助</p>
+<p>在 lua/keymaps.lua 进行配置，通过 <code>&lt;leader&gt;e</code> 可以开启或关闭文件树，通过 <code>&lt;leader&gt;t</code> 可以将光标聚焦于文件树，通过 <code>&lt;leader&gt;ff</code> 来定位当前文件在文件树中的位置，</p>
+<p>一般来说，<code>&lt;leader&gt;</code> 默认是 <code>\</code>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;e&quot;, &quot;:NvimTreeToggle&lt;CR&gt;&quot;, opts)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;t&quot;, &quot;:NvimTreeFocus&lt;CR&gt;&quot;, opts)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;ff&quot;, &quot;:NvimTreeFindFile&lt;CR&gt;&quot;, opts)
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;c&quot;, &quot;:NvimTreeFindFileToggle&lt;CR&gt;&quot;, opts)
+</code></pre></div>
+<h3 id="bufferline">bufferline</h3>
+<h3 id="telescope">Telescope</h3>
+<p>这个插件用来搜索文件、搜索某个字段在哪些文件中出现。</p>
+<p>下载链接：<a href="https://github.com/nvim-telescope/telescope.nvim">https://github.com/nvim-telescope/telescope.nvim</a></p>
+<p>常用的功能主要是三个：
+1. 通过文件名查找文件：Telescope find_files
+2. 通过字段来查找在哪些文件中出现: Telescope live_grep
+3. 查看 buffers，即已经打开的文件列表 buffer：Telescope buffers</p>
+<p>如果查看 buffers 时想按照打开顺序对文件进行排序（就像 vscode 中那样），可以进行设置：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">local</span> <span class="n">status</span><span class="p">,</span> <span class="n">telescope</span> <span class="o">=</span> <span class="nb">pcall</span><span class="p">(</span><span class="nb">require</span><span class="p">,</span> <span class="s2">&quot;telescope&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">telescope</span><span class="p">.</span><span class="n">setup</span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  <span class="n">pickers</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">buffers</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>      <span class="n">ignore_current_buffer</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>      <span class="n">sort_lastused</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="p">},</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  <span class="p">},</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
+</code></pre></div>
+<p>在选择文件时常用的一些快捷键：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># 选择相关
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>&lt;C-n&gt;/&lt;Down&gt;    Next item
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>&lt;C-p&gt;/&lt;Up&gt;      Previous item
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>j/k             Next/Previous (in normal mode)
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>H/M/L             Select High/Middle/Low (in normal mode)
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>gg/G              Select the first/last item (in normal mode)
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a># 打开文件相关
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>&lt;CR&gt;              Confirm selection
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>&lt;C-x&gt;             Go to file selection as a split
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>&lt;C-v&gt;             Go to file selection as a vsplit
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>&lt;C-t&gt;             Go to a file in a new tab
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a># 阅览
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>&lt;C-u&gt;             Scroll up in preview window
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>&lt;C-d&gt;             Scroll down in preview window
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a># 其他
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>?                 Show mappings for picker actions (normal mode)
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>&lt;C-c&gt;             Close telescope (insert mode)
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>&lt;Esc&gt;             Close telescope (in normal mode)        
+</code></pre></div>
+<h3 id="auto-pairs">auto-pairs</h3>
+<p><a href="https://github.com/jiangmiao/auto-pairs">jiangmiao/auto-pairs: Vim plugin, insert or delete brackets, parens, quotes in pair (github.com)</a></p>
+<p>自动插入、删除括号、引号</p>
+<h3 id="nvim-treesitter">Nvim-Treesitter</h3>
+<p>Nvim-Treesitter 利用树结构解析和语法树生成技术，为 nvim 提供更精准和高效的代码高亮、代码折叠、代码导航功能，支持多种变成语言，增强代码编辑体验。</p>
+<p>下载链接：<a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter/nvim-treesitter: Nvim Treesitter configurations and abstraction layer (github.com)</a></p>
+<p>在安装不同语言的 treesitter 时，可以设置不同的 compilers。例如使用 TSInstall cpp 时，需要将 compilers 设置为 clang。如果使用 clang++ 编译，则会遇到报错。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">require</span><span class="w"> </span><span class="err">&#39;</span><span class="n">nvim</span><span class="o">-</span><span class="n">treesitter</span><span class="p">.</span><span class="n">install</span><span class="err">&#39;</span><span class="p">.</span><span class="n">compilers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="n">clang</span><span class="o">++</span><span class="err">&#39;</span><span class="p">}</span>
+</code></pre></div>
+<p>使用 :checkhealth nvim-treesitter 检查是否安装成功。</p>
+<h3 id="nvim-comment">Nvim-comment</h3>
+<p>在 vscode 中，可以使用 <code>cmd+"</code> 来快速注释代码，那么在 nvim 中，可以通过安装 nvim-comment 插件实现快速进行注释。</p>
+<p>下载链接：<a href="https://github.com/terrortylor/nvim-comment">terrortylor/nvim-comment: A comment toggler for Neovim, written in Lua (github.com)</a></p>
+<p>直接使用命令进行注释：</p>
 <ul>
-<li>上标：^ 例如 <code>x_i^2</code> : <span class="arithmatex">\(x_i^2\)</span> </li>
-<li>下标：_ 例如 <code>x_j</code> <span class="arithmatex">\(x_j\)</span> </li>
+<li><code>CommentToggle</code> 注释/取消注释当前行</li>
+<li><code>67,69CommentToggle</code> 注释/取消注释第 67 到第 69 行</li>
+<li><code>'&lt;,'&gt;CommentToggle</code> 注释/取消注释 visual 模式下选择的代码块</li>
 </ul>
-<p>注意： 一个组即单个字符或者使用{...}包裹起来的内容。他可以消除二义性</p>
-<p>例如：<code>10^10</code>会得到 <span class="arithmatex">\(10^10\)</span>    </p>
-<p>​       <code>10^{10}</code> 会得到 <span class="arithmatex">\(10^{10}\)</span> </p>
-<h3 id="_4">括号</h3>
+<p>或者使用快捷指令：</p>
 <ul>
-<li>小括号和方括号：() []  <span class="arithmatex">\(()\)</span>  <span class="arithmatex">\([]\)</span> </li>
-<li>大括号：<code>\}  \{</code>   或者  <code>\lbrace</code>   <code>\rbrace</code>  <ul>
-<li>例如：<code>\{a*b\}</code> <span class="arithmatex">\(\{a*b\}\)</span>    </li>
+<li><code>gcc</code> 注释/取消注释当前行</li>
+<li><code>gc{motion}</code> comment/uncomment selection defined by a motion (as lines are commented, any comment toggling actions will default to a linewise):<ul>
+<li><code>gcip</code> 注释/取消注释当前段落</li>
+<li><code>gc4j</code> 注释/取消注释当前行以及下面的 4 行</li>
 </ul>
 </li>
-<li>尖括号： <code>\langle</code> 和 <code>\rangle</code>   ：<span class="arithmatex">\(\langle x\rangle\)</span></li>
-<li>上取整：<code>\lceil</code>和<code>\rceil</code> ：<span class="arithmatex">\(\lceil x\rceil\)</span></li>
-<li>下取整：<code>\lfloor</code> 和 <code>\rfloor</code> ：<span class="arithmatex">\(\lfloor x \rfloor\)</span></li>
-<li>不可见括号，用 . 表示</li>
 </ul>
-<p>注意：原始符号不会随着公式大小缩放，可以使用\left(...\right)来自适应地调整括号大小。</p>
-<h3 id="_5">求和与积分</h3>
+<h3 id="which-key">Which-key</h3>
+<p><a href="https://github.com/folke/which-key.nvim">folke/which-key.nvim: 💥 Create key bindings that stick. WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type. (github.com)</a></p>
+<h3 id="_3">主题插件</h3>
+<p>nvim 可用的主题有很多，可以从这里自选：<a href="https://vimcolorschemes.com/i/trending">trending colorschemes | vimcolorschemes</a></p>
+<h2 id="lsp">LSP 配置</h2>
+<p>lspconfig</p>
 <ul>
-<li>\sum 用来表示求和符号，其下标表示求和下限，上标表示上限。<ul>
-<li><code>\sum_1^n</code>    <span class="arithmatex">\(\sum_1^n\)</span></li>
+<li>[d 跳至上一个有错误的地方</li>
+<li>]d 跳至下一个有错误的地方</li>
 </ul>
-</li>
-<li>\int 用来表示积分符号<ul>
-<li><code>\int_1^\infty</code> :   <span class="arithmatex">\(\int_1^\infty\)</span> </li>
-</ul>
-</li>
-<li><code>\prod</code> ：<span class="arithmatex">\(\prod\)</span> </li>
-<li><code>\bigcup</code> : <span class="arithmatex">\(\bigcup\)</span> </li>
-<li><code>\bigcap</code> ：<span class="arithmatex">\(\bigcup\)</span></li>
-<li><code>\iint</code> : <span class="arithmatex">\(\iint\)</span></li>
-</ul>
-<h3 id="_6">分式和根式</h3>
+<p>nvim-cmp：<a href="https://github.com/hrsh7th/nvim-cmp">https://github.com/hrsh7th/nvim-cmp</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/2346026">详解nvim内建LSP体系与基于nvim-cmp的代码补全体系-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
+<p>mason：<a href="https://github.com/williamboman/mason-lspconfig.nvim">https://github.com/williamboman/mason-lspconfig.nvim</a></p>
+<p>mason-lspconfig：<a href="https://github.com/williamboman/mason-lspconfig.nvim?">https://github.com/williamboman/mason-lspconfig.nvim</a></p>
+<p>nvim-lspconfig：<a href="https://github.com/neovim/nvim-lspconfig/tree/master">https://github.com/neovim/nvim-lspconfig/tree/master</a></p>
+<p>nvim-lspconfig 支持的 LSP：<a href="https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md">https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md</a></p>
+<h2 id="_4">剪切板配置</h2>
+<p>安装 xclip：<a href="https://github.com/astrand/xclip">Releases · astrand/xclip (github.com)</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>./bootstrap
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>./configure
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>make
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>make<span class="w"> </span>install
+</code></pre></div>
+<p>过程中如果报错：configure: error: *** X11/Xmu/Atoms.h is missing ***</p>
+<p>则需要安装 libXmu-devel：sudo yum install libXmu-devel</p>
+<p>Mac 端安装 <a href="https://www.cyberciti.biz/faq/apple-osx-mountain-lion-mavericks-install-xquartz-server/">How to install XQuartz on macOS for SSH X11 forwarding - nixCraft (cyberciti.biz)</a></p>
+<p>注意要安装 xuath。</p>
+<p>然后，需要将服务器的 sshd_config 中 X11Forwarding 打开，然后重启 ssh 服务（很危险，执行之前最好保证配置项正确）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$sudo</span><span class="w"> </span>cat<span class="w"> </span>/etc/ssh/sshd_config<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;X11&#39;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>X11Forwarding<span class="w"> </span>yes
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>X11DisplayOffset<span class="w"> </span><span class="m">10</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>X11UseLocalhost<span class="w"> </span>yes
+</code></pre></div>
+<p>然后将客户端的 ssh_config 中 ForwardX11 打开：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="w">    </span>ForwardX11<span class="w"> </span>yes<span class="w"> </span><span class="c1"># 9.19 add：看起来不加也可以</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1">#    X11Forwarding yes</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span>XAuthLocation<span class="w"> </span>/opt/X11/bin/xauth
+</code></pre></div>
+<p>接着，修改 nvim 配置：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>--<span class="w"> </span>这里是<span class="w"> </span>vim<span class="w"> </span>配置
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">let</span><span class="w"> </span>g:clipboard<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;name&#39;</span>:<span class="w"> </span><span class="s1">&#39;xclip&#39;</span>,
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;copy&#39;</span>:<span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;+&#39;</span>:<span class="w"> </span><span class="s1">&#39;xclip -selection clipboard&#39;</span>,
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;*&#39;</span>:<span class="w"> </span><span class="s1">&#39;xclip -selection clipboard&#39;</span>,
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="se">\ </span><span class="o">}</span>,
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;paste&#39;</span>:<span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;+&#39;</span>:<span class="w"> </span><span class="s1">&#39;xclip -selection clipboard -o&#39;</span>,
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="se">\ </span><span class="s1">&#39;*&#39;</span>:<span class="w"> </span><span class="s1">&#39;xclip -selection clipboard -o&#39;</span>,
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="se">\ </span><span class="o">}</span>,
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">    </span><span class="se">\ </span><span class="o">}</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>--<span class="w"> </span>这里是<span class="w"> </span>lua<span class="w"> </span>配置脚本<span class="w">   </span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>vim.g.clipboard<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;xclip&#39;</span>,
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="nv">copy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">        </span><span class="o">[</span><span class="s1">&#39;+&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;xclip -selection clipboard&#39;</span>,
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">        </span><span class="o">[</span><span class="s1">&#39;*&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;xclip -selection clipboard&#39;</span>,
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">    </span><span class="o">}</span>,
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">    </span><span class="nv">paste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="o">[</span><span class="s1">&#39;+&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;xclip -selection clipboard -o&#39;</span>,
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">        </span><span class="o">[</span><span class="s1">&#39;*&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;xclip -selection clipboard -o&#39;</span>,
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">    </span><span class="o">}</span>,
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="o">}</span>
+</code></pre></div>
+<p>启动 mac 上的 Xquartz，并保证其设置 &gt; 安全性 &gt; 允许从网络客户端链接设置为 true。</p>
+<p>安装成功后，控制台查看 DISPLAY 环境变量，可以正常输出。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">$echo</span><span class="w"> </span><span class="nv">$DISPLAY</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>localhost:12.0
+</code></pre></div>
+<h3 id="_5">终端</h3>
+<p>:terminal</p>
+<p>:vsplit | terminal</p>
+<p>:split | terminal</p>
+<p>退出 terminal 的 insert 模式：ctrl+\ 再按下 ctrl + n 即可退出。因为 esc 在终端的行为和文本编辑模式中有所不同，esc 可能会被视为发送字符给终端，而不是用于切换模式。</p>
+<p>终端插件：<a href="https://github.com/akinsho/toggleterm.nvim">akinsho/toggleterm.nvim: A neovim lua plugin to help easily manage multiple terminal windows (github.com)</a></p>
+<p>使用方法<br />
+ToggleTerm size=40 dir=~/.config/nvim direction=horizontal name=desktop</p>
+<p>ToggleTermToggleAll 打开之前所有的 term</p>
+<p>TermExec</p>
+<h3 id="_6"></h3>
+<h2 id="_7">参考资料</h2>
 <ul>
-<li><code>\frac ab</code>   ： <span class="arithmatex">\(\frac ab\)</span>   (如果分子分母不是单个字符，使用{...}分组)</li>
-<li><code>\over</code> ：<code>{a+1\over b+1}</code>: <span class="arithmatex">\({a+1\over b+1}\)</span></li>
-<li><code>\sqrt</code> :   <code>\sqrt{\frac ab}</code> :  <span class="arithmatex">\(\sqrt{\frac ab}\)</span>   <code>\sqrt[4]{a \over b}$</code> : <span class="arithmatex">\(\sqrt[4]{a \over b}\)</span></li>
+<li>Lazy 文档：<a href="https://lazy.folke.io/usage">https://lazy.folke.io/usage</a></li>
+<li>Lua 语法：<a href="https://learnxinyminutes.com/docs/lua/">https://learnxinyminutes.com/docs/lua/</a></li>
+<li>推荐的配置：<a href="https://github.com/ayamir/nvimdots">https://github.com/ayamir/nvimdots</a></li>
+<li>插件配置教程：<a href="https://www.cnblogs.com/youngxhui/p/17730417.html">neovim入门指南(二)：常用插件 - youngxhui - 博客园 (cnblogs.com)</a></li>
+<li><a href="https://github.com/SmithJson/nvim">SmithJson/nvim: IDE VIM Configuration (github.com)</a></li>
+<li><a href="https://martinlwx.github.io/zh-cn/config-neovim-from-scratch">https://martinlwx.github.io/zh-cn/config-neovim-from-scratch</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/382092667">https://zhuanlan.zhihu.com/p/382092667</a></li>
+<li>neovim doc：<a href="https://neovim.io/doc/">https://neovim.io/doc/</a></li>
+<li>Node：<a href="https://nodejs.org/en/download/package-manager">https://nodejs.org/en/download/package-manager</a></li>
 </ul>
-<h3 id="_7">字体</h3>
-<ul>
-<li>\mathbb 或 \Bbb 显示黑板粗体字，此字体经常用来表示实数，整数，有理数和负数：<span class="arithmatex">\(\mathbb {CHNQRZ}\)</span></li>
-<li>\mathbf 显示黑体字：<span class="arithmatex">\(\mathbf  {BCDEFG}\)</span></li>
-<li>\mathtt 显示打印机字体：<span class="arithmatex">\(\mathtt  {BCDEFG}\)</span></li>
-<li>\mathrm 显示罗马体 : <span class="arithmatex">\(\mathrm {ABCD}\)</span></li>
-<li>\mathscr 显示手写体 : <span class="arithmatex">\(\mathscr {ABCD}\)</span></li>
-<li>\mathfrak 显示Fraktur字母（一种德国字体）：<span class="arithmatex">\(\mathfrak{ABCD}\)</span></li>
-</ul>
-<h3 id="_8">特殊函数和符号</h3>
-<ul>
-<li>常见三角函数 <span class="arithmatex">\(sin(x)\)</span>  <span class="arithmatex">\(arctan(x)\)</span>   <span class="arithmatex">\(\lim_{1\rightarrow\infty}\)</span></li>
-<li>比较运算符 : \lt \gt \le \ge \neq : <span class="arithmatex">\(\lt\)</span>  <span class="arithmatex">\(\gt\)</span>  <span class="arithmatex">\(\le\)</span>  <span class="arithmatex">\(\ge\)</span>  <span class="arithmatex">\(\neq\)</span>   。可以加上\not： <span class="arithmatex">\(\not\lt\)</span> </li>
-<li>\times  \div \pm \mp : <span class="arithmatex">\(\times\)</span>   <span class="arithmatex">\(\div\)</span>  <span class="arithmatex">\(\pm\)</span>  <span class="arithmatex">\(\mp\)</span> </li>
-<li>\cdot 表示居中的点 : x \codt y : <span class="arithmatex">\(x \cdot y\)</span></li>
-<li>集合关系与运算：<ul>
-<li>\cup <span class="arithmatex">\(\cup\)</span></li>
-<li>\cap <span class="arithmatex">\(\cap\)</span></li>
-<li>\setminus <span class="arithmatex">\(\setminus\)</span></li>
-<li>\subset <span class="arithmatex">\(\subset\)</span></li>
-<li>\subseteq <span class="arithmatex">\(\subseteq\)</span></li>
-<li>\subsetneq <span class="arithmatex">\(\subsetneq\)</span></li>
-<li>\supset <span class="arithmatex">\(\supset\)</span></li>
-<li>\in <span class="arithmatex">\(\in\)</span></li>
-<li>\notin <span class="arithmatex">\(\notin\)</span></li>
-<li>\emptyset <span class="arithmatex">\(\emptyset\)</span></li>
-<li>\varnothing  <span class="arithmatex">\(\varnothing\)</span></li>
-</ul>
-</li>
-<li>表示排列使用 \binom  {n+1}{2k}或{n+1\choose 2k}<ul>
-<li><span class="arithmatex">\(\binom {n+1}{2k}\)</span>   $ {n+1\choose 2k}$ </li>
-</ul>
-</li>
-<li>箭头：\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto<ul>
-<li><span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(\leftarrow\)</span> <span class="arithmatex">\(\Rightarrow\)</span> <span class="arithmatex">\(\Leftarrow\)</span> <span class="arithmatex">\(\mapsto\)</span></li>
-</ul>
-</li>
-<li>逻辑运算符：\land \lor \lnot \forall \exists \top \bot \vdash \vDash<ul>
-<li><span class="arithmatex">\(\land\)</span>  <span class="arithmatex">\(\lor\)</span> <span class="arithmatex">\(\lnot\)</span>    <span class="arithmatex">\(\forall\)</span>    <span class="arithmatex">\(\exists\)</span>  </li>
-</ul>
-</li>
-<li>\star \ast \oplus \circ \bullet <ul>
-<li><span class="arithmatex">\(\star\)</span> <span class="arithmatex">\(\ast\)</span> <span class="arithmatex">\(\oplus\)</span> <span class="arithmatex">\(\circ\)</span> <span class="arithmatex">\(\bullet\)</span> </li>
-</ul>
-</li>
-<li>\approx <span class="arithmatex">\(\approx\)</span>   \sim <span class="arithmatex">\(\sim\)</span>  \cong <span class="arithmatex">\(\cong\)</span>  \equiv <span class="arithmatex">\(\equiv\)</span>  \prec <span class="arithmatex">\(\prec\)</span> </li>
-<li>\infty <span class="arithmatex">\(\infty\)</span> \aleph_o <span class="arithmatex">\(\aleph_o\)</span> \navla <span class="arithmatex">\(\nabla\)</span>  \Im <span class="arithmatex">\(\Im\)</span>  \Re <span class="arithmatex">\(\Re\)</span> </li>
-<li>\pmode   <span class="arithmatex">\(a\equiv b \pmod n\)</span></li>
-<li>\ldots  \cdots  ldots 的位置稍低，cdots位置居中<ul>
-<li><span class="arithmatex">\(a_1 + a_2 +\cdots +a_n\)</span>   </li>
-<li><span class="arithmatex">\(a_1,a_2,\ldots,a_n\)</span></li>
-</ul>
-</li>
-</ul>
-<h3 id="_9">空间</h3>
-<p><code>a \ b</code> ：<span class="arithmatex">\(a \ b\)</span> </p>
-<p><code>a \; b</code> :  <span class="arithmatex">\(a \; b\)</span></p>
-<p><code>a\quad b</code> ：<span class="arithmatex">\(a\quad b\)</span></p>
-<p><code>a\qquad b</code> :  <span class="arithmatex">\(a\qquad b\)</span></p>
-<h3 id="_10">顶部符号</h3>
-<p>加波浪线 输入 \widetilde   \sim</p>
-<p>加一个点 \dot{要加点的字母}加两个点\ddot{要加点的字母}</p>
-<h3 id="_11">声调/变音符号</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> <span class="s">$</span><span class="nv">\dot</span><span class="nb">{a} </span><span class="nv">\ddot</span><span class="nb">{a} </span><span class="nv">\acute</span><span class="nb">{a} </span><span class="nv">\grave</span><span class="nb">{a}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\dot{a} \quad \ddot{a} \quad\acute{a}\quad \grave{a}\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> <span class="s">$</span><span class="nv">\check</span><span class="nb">{a} </span><span class="nv">\breve</span><span class="nb">{a} </span><span class="nv">\tilde</span><span class="nb">{a} </span><span class="nv">\bar</span><span class="nb">{a}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\check{a} \quad \breve{a} \quad \tilde{a} \quad \bar{a}\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a> <span class="s">$</span><span class="nv">\hat</span><span class="nb">{a} </span><span class="nv">\widehat</span><span class="nb">{a} </span><span class="nv">\vec</span><span class="nb">{a} </span><span class="nv">\overline</span><span class="nb">{a}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\hat{a}\quad \widehat{a} \quad\vec{a} \quad \overline{a}\)</span></p>
-<h3 id="_12">数学公式</h3>
-<h4 id="1">1. 界限</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="s">$</span><span class="nv">\min</span><span class="nb"> x </span><span class="nv">\max</span><span class="nb"> y </span><span class="nv">\inf</span><span class="nb"> s </span><span class="nv">\sup</span><span class="nb"> t</span><span class="s">$</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="s">$</span><span class="nv">\lim</span><span class="nb"> u </span><span class="nv">\liminf</span><span class="nb"> v </span><span class="nv">\limsup</span><span class="nb"> w</span><span class="s">$</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s">$</span><span class="nv">\dim</span><span class="nb"> p </span><span class="nv">\deg</span><span class="nb"> p </span><span class="nv">\det</span><span class="nb"> m </span><span class="nv">\ker\phi</span><span class="s">$</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s">$</span><span class="nv">\infty</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(\min x \quad \max y \quad \inf s \quad \sup t\)</span>
-<span class="arithmatex">\(\lim u \quad \liminf v \quad \limsup w\)</span>
-<span class="arithmatex">\(\dim p \quad \deg p \quad \det m \quad \ker\phi\)</span></p>
-<p><span class="arithmatex">\(\infty\)</span></p>
-<h4 id="2">2. 微分以及导数</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="s">$</span><span class="nb">dt </span><span class="nv">\mathrm</span><span class="nb">{d}t </span><span class="nv">\partial</span><span class="nb"> t </span><span class="nv">\nabla\psi</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(dt \quad \mathrm{d}t \quad \partial t \quad \nabla\psi\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="s">$</span><span class="nv">\prime</span><span class="nb"> </span><span class="nv">\backprime</span><span class="nb"> f^</span><span class="nv">\prime</span><span class="nb"> f&#39; f&#39;&#39; f^{</span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="nb">} </span><span class="nv">\dot</span><span class="nb">{y} </span><span class="nv">\ddot</span><span class="nb">{y}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\prime \quad \backprime \quad f^\prime \quad f' \quad f'' \quad f^{(3)} \quad \dot{y} \quad \ddot{y}\)</span> </p>
-<h4 id="3">3. 模算数</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="s">$</span><span class="nb">a </span><span class="nv">\equiv</span><span class="nb"> </span><span class="m">1</span><span class="nb"> </span><span class="nv">\pmod</span><span class="nb"> {m}</span><span class="s">$</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s">$</span><span class="nb">a</span><span class="nv">\%</span><span class="nb">b</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(a \equiv 1 \pmod {m}\)</span></p>
-<p><span class="arithmatex">\(a\%b\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="s">$</span><span class="nb">a </span><span class="nv">\bmod</span><span class="nb"> b</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(a \bmod b\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> <span class="s">$</span><span class="nv">\gcd</span><span class="o">(</span><span class="nb">m,n</span><span class="o">)</span><span class="nb"> </span><span class="nv">\operatorname</span><span class="nb">{lcm}</span><span class="o">(</span><span class="nb">m,n</span><span class="o">)</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\gcd(m,n) \quad \operatorname{lcm}(m,n)\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="s">$</span><span class="nv">\mid</span><span class="nb"> </span><span class="nv">\nmid</span><span class="nb"> </span><span class="nv">\shortmid</span><span class="nb"> </span><span class="nv">\nshortmid</span><span class="s">$</span> 
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a> ps：<span class="k">\mid</span>可以用|代替。
-</code></pre></div>
-<p><span class="arithmatex">\(\mid \quad \nmid \quad \shortmid \quad \nshortmid\)</span>  </p>
-<h4 id="4">4. 根号</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="s">$</span><span class="nv">\surd</span><span class="nb"> </span><span class="nv">\sqrt</span><span class="nb">{</span><span class="m">2</span><span class="nb">} </span><span class="nv">\sqrt</span><span class="o">[</span><span class="nb">n</span><span class="o">]</span><span class="nb">{} </span><span class="nv">\sqrt</span><span class="o">[</span><span class="nb">n</span><span class="o">]</span><span class="nb">{x}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\surd \quad \sqrt{2} \quad \sqrt[n]{} \quad \sqrt[n]{x}\)</span> </p>
-<h4 id="5">5. 运算符</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a> <span class="s">$</span><span class="o">+</span><span class="nb"> </span><span class="o">-</span><span class="nb"> </span><span class="nv">\pm</span><span class="nb"> </span><span class="nv">\mp</span><span class="nb"> </span><span class="nv">\dotplus</span><span class="s">$</span> 
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a> <span class="s">$</span><span class="nv">\times</span><span class="nb"> </span><span class="nv">\div</span><span class="nb"> </span><span class="nv">\divideontimes</span><span class="nb"> </span><span class="o">/</span><span class="nb"> </span><span class="nv">\backslash</span><span class="s">$</span> 
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a> <span class="s">$</span><span class="nv">\cdot</span><span class="nb"> </span><span class="o">*</span><span class="nb"> </span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\circ</span><span class="nb"> </span><span class="nv">\bullet</span><span class="s">$</span> 
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a> <span class="s">$</span><span class="nv">\oplus</span><span class="nb"> </span><span class="nv">\ominus</span><span class="nb"> </span><span class="nv">\otimes</span><span class="nb"> </span><span class="nv">\oslash</span><span class="nb"> </span><span class="nv">\odot</span><span class="s">$</span> 
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a> <span class="s">$</span><span class="nv">\bigoplus</span><span class="nb"> </span><span class="nv">\bigotimes</span><span class="nb"> </span><span class="nv">\bigodot</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(+ \quad - \quad \pm \quad \mp \quad \dotplus\)</span> 
- <span class="arithmatex">\(\times \quad \div \quad \divideontimes \quad / \quad \backslash\)</span> 
- <span class="arithmatex">\(\cdot \quad * \quad \star \quad \circ \quad \bullet\)</span> </p>
-<p><span class="arithmatex">\(\oplus\quad \ominus\quad \otimes\quad \oslash\quad \odot\)</span> </p>
-<p><span class="arithmatex">\(\bigoplus \quad \bigotimes \quad \bigodot\)</span> </p>
-<h4 id="6">6. 集合</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a> <span class="s">$</span><span class="nv">\emptyset</span><span class="nb"> </span><span class="nv">\varnothing</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\emptyset \quad \varnothing\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a> <span class="s">$</span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\notin</span><span class="nb"> </span><span class="nv">\not\in</span><span class="nb"> </span><span class="nv">\ni</span><span class="nb"> </span><span class="nv">\not\ni</span><span class="s">$</span> 
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a> ps:<span class="k">\not</span>是在下一个字符上画斜杠。
-</code></pre></div>
-<p><span class="arithmatex">\(\in \quad \notin \quad \not\in \quad \ni \quad \not\ni\)</span>  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="s">$</span><span class="nv">\subset</span><span class="nb"> </span><span class="nv">\supset</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(\subset\quad  \supset\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="s">$</span><span class="nv">\subseteq</span><span class="nb"> </span><span class="nv">\nsubseteq</span><span class="nb"> </span><span class="nv">\subsetneq</span><span class="nb"> </span><span class="nv">\varsubsetneq</span><span class="nb"> </span><span class="nv">\sqsubseteq</span><span class="s">$</span> 
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="s">$</span><span class="nv">\supseteq</span><span class="nb"> </span><span class="nv">\nsupseteq</span><span class="nb"> </span><span class="nv">\supsetneq</span><span class="nb"> </span><span class="nv">\varsupsetneq</span><span class="nb"> </span><span class="nv">\sqsupseteq</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\subseteq \quad \nsubseteq \quad \subsetneq \quad \varsubsetneq \quad \sqsubseteq\)</span> </p>
-<p><span class="arithmatex">\(\supseteq \quad \nsupseteq \quad \supsetneq \quad \varsupsetneq \quad \sqsupseteq\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="s">$</span><span class="nv">\cap</span><span class="nb"> </span><span class="nv">\bigcap</span><span class="nb"> </span><span class="nv">\cup</span><span class="nb"> </span><span class="nv">\bigcup</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(\cap \quad \bigcap \quad \cup \quad \bigcup\)</span></p>
-<h4 id="_13">关系符号</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a> <span class="s">$</span><span class="o">=</span><span class="nb"> </span><span class="nv">\ne</span><span class="nb"> </span><span class="nv">\neq</span><span class="nb"> </span><span class="nv">\equiv</span><span class="nb"> </span><span class="nv">\not\equiv</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(= \quad \ne \quad \neq \quad \equiv \quad \not\equiv\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="s">$</span><span class="nv">\sim</span><span class="nb"> </span><span class="nv">\nsim</span><span class="nb"> </span><span class="nv">\backsim</span><span class="nb"> </span><span class="nv">\thicksim</span><span class="nb"> </span><span class="nv">\simeq</span><span class="nb"> </span><span class="nv">\backsimeq</span><span class="nb"> </span><span class="nv">\eqsim</span><span class="nb"> </span><span class="nv">\cong</span><span class="nb"> </span><span class="nv">\ncong</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\sim \quad \nsim \quad \backsim \quad \thicksim \quad \simeq \quad \backsimeq\quad  \eqsim \quad \cong\quad  \ncong\)</span> </p>
 
   <div id="busuanzi_container_page_pv" style="margin: 10px 0px;">
     <font size="2" color="grey">本文访问 <span id="busuanzi_value_page_pv"></span> 次</font>
@@ -1842,7 +1673,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 21, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 16, 2024</span>
   </span>
 
     
@@ -1852,7 +1683,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 16, 2024</span>
   </span>
 
     
