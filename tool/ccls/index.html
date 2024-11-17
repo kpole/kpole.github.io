@@ -10,13 +10,13 @@
         <meta name="author" content="kpole">
       
       
-        <link rel="canonical" href="https://kpole.github.io/tool/mathjax/">
+        <link rel="canonical" href="https://kpole.github.io/tool/ccls/">
       
       
-        <link rel="prev" href="../cnblog_github_io/">
+        <link rel="prev" href="../neovim%E9%85%8D%E7%BD%AE/">
       
       
-        <link rel="next" href="../markdown/">
+        <link rel="next" href="../nvim_with_ccls/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Matjax公式汇总 - 今夕的wiki</title>
+        <title>ubuntu 安装 ccls - 今夕的wiki</title>
       
     
     
@@ -119,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mathjax" class="md-skip">
+        <a href="#cmake" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Matjax公式汇总
+              ubuntu 安装 ccls
             
           </span>
         </div>
@@ -770,10 +770,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ccls/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ubuntu 安装 ccls
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -782,6 +800,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmake" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装 CMake
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clang" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装 Clang、相关开发依赖库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ccls" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译安装 ccls
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -833,30 +896,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Matjax公式汇总
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mathjax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -865,209 +908,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      基础
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="基础">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      希腊字母
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      上标与下标
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      括号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      求和与积分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分式和根式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      字体
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊函数和符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      顶部符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      声调/变音符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="数学公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 界限
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 微分以及导数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 模算数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 根号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 运算符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 集合
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      关系符号
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1283,8 +1123,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1293,185 +1131,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#cmake" class="md-nav__link">
     <span class="md-ellipsis">
-      基础
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="基础">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      希腊字母
+      安装 CMake
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#clang" class="md-nav__link">
     <span class="md-ellipsis">
-      上标与下标
+      安装 Clang、相关开发依赖库
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#ccls" class="md-nav__link">
     <span class="md-ellipsis">
-      括号
+      编译安装 ccls
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      求和与积分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分式和根式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      字体
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊函数和符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      顶部符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      声调/变音符号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="数学公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 界限
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 微分以及导数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 模算数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 根号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 运算符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 集合
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      关系符号
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1493,370 +1175,60 @@
   
 
 
-<h1 id="mathjax">Mathjax学习笔记</h1>
-<h2 id="_1">基础</h2>
+  <h1>ubuntu 安装 ccls</h1>
+
+<p><strong>ccls</strong> 是一个支持 C、C++ 和 Objective-C 的语言服务器（Language Server Protocol，LSP）实现，专为高效的代码分析与开发设计。它支持代码补全、跳转、语法检查等功能，常用于编辑器如 VS Code、Vim 和 Emacs 的 C/C++ 开发环境。</p>
+<p>本文主要介绍如何在 ubuntu 中使用源码编译安装 ccls。</p>
+<p>在 ccls 的 <a href="[Build · MaskRay/ccls Wiki](https://github.com/MaskRay/ccls/wiki/Build)">repo wiki</a> 中提到源码编译依赖的环境有：</p>
 <ul>
-<li>displayed 公式： 分隔符<code>$$ ... $$</code>  或者 <code>\[...\]</code> </li>
-<li>inline 公式 <code>$...$</code> 或者 <code>(...)</code> </li>
+<li>CMake 3.8 及以上</li>
+<li>C++ 编译器</li>
+<li>Clang 5 及以上</li>
+<li>GNU GCC 7.2 及以上</li>
+<li>MSVC 2017及以上（ubuntu 上面不考虑）</li>
+<li>Clang + LLVM 的头文件以及相关库，版本需 &gt;=7</li>
 </ul>
-<h3 id="_2">希腊字母</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">名称</th>
-<th style="text-align: center;">大写</th>
-<th style="text-align: center;">Tex</th>
-<th style="text-align: center;">小写</th>
-<th style="text-align: center;">Tex</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">alpha</td>
-<td style="text-align: center;"><span class="arithmatex">\(A\)</span></td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;"><span class="arithmatex">\(\alpha\)</span></td>
-<td style="text-align: center;">\alpha</td>
-</tr>
-<tr>
-<td style="text-align: center;">beta</td>
-<td style="text-align: center;"><span class="arithmatex">\(B\)</span></td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;"><span class="arithmatex">\(\beta\)</span></td>
-<td style="text-align: center;">\beta</td>
-</tr>
-<tr>
-<td style="text-align: center;">gamma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Gamma\)</span></td>
-<td style="text-align: center;">\Gamma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\gamma\)</span></td>
-<td style="text-align: center;">\gammma</td>
-</tr>
-<tr>
-<td style="text-align: center;">delta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Delta\)</span></td>
-<td style="text-align: center;">\Delta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\delta\)</span></td>
-<td style="text-align: center;">\delta</td>
-</tr>
-<tr>
-<td style="text-align: center;">epslion</td>
-<td style="text-align: center;"><span class="arithmatex">\(E\)</span></td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;"><span class="arithmatex">\(\epsilon\)</span></td>
-<td style="text-align: center;">\epsilon</td>
-</tr>
-<tr>
-<td style="text-align: center;">zeta</td>
-<td style="text-align: center;"><span class="arithmatex">\(Z\)</span></td>
-<td style="text-align: center;">Z</td>
-<td style="text-align: center;"><span class="arithmatex">\(\zeta\)</span></td>
-<td style="text-align: center;">zeta</td>
-</tr>
-<tr>
-<td style="text-align: center;">eta</td>
-<td style="text-align: center;"><span class="arithmatex">\(H\)</span></td>
-<td style="text-align: center;">H</td>
-<td style="text-align: center;"><span class="arithmatex">\(\eta\)</span></td>
-<td style="text-align: center;">\eta</td>
-</tr>
-<tr>
-<td style="text-align: center;">theta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Theta\)</span></td>
-<td style="text-align: center;">\Theta</td>
-<td style="text-align: center;"><span class="arithmatex">\(\theta\)</span></td>
-<td style="text-align: center;">\theta</td>
-</tr>
-<tr>
-<td style="text-align: center;">iota</td>
-<td style="text-align: center;"><span class="arithmatex">\(I\)</span></td>
-<td style="text-align: center;">I</td>
-<td style="text-align: center;"><span class="arithmatex">\(\iota\)</span></td>
-<td style="text-align: center;">\itoa</td>
-</tr>
-<tr>
-<td style="text-align: center;">kappa</td>
-<td style="text-align: center;"><span class="arithmatex">\(K\)</span></td>
-<td style="text-align: center;">K</td>
-<td style="text-align: center;"><span class="arithmatex">\(\kappa\)</span></td>
-<td style="text-align: center;">\kappa</td>
-</tr>
-<tr>
-<td style="text-align: center;">lambda</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Lambda\)</span></td>
-<td style="text-align: center;">\Lambda</td>
-<td style="text-align: center;"><span class="arithmatex">\(\lambda\)</span></td>
-<td style="text-align: center;">\lambda</td>
-</tr>
-<tr>
-<td style="text-align: center;">mu</td>
-<td style="text-align: center;"><span class="arithmatex">\(M\)</span></td>
-<td style="text-align: center;">M</td>
-<td style="text-align: center;"><span class="arithmatex">\(\mu\)</span></td>
-<td style="text-align: center;">\mu</td>
-</tr>
-<tr>
-<td style="text-align: center;">nu</td>
-<td style="text-align: center;"><span class="arithmatex">\(N\)</span></td>
-<td style="text-align: center;">N</td>
-<td style="text-align: center;"><span class="arithmatex">\(\nu\)</span></td>
-<td style="text-align: center;">\nu</td>
-</tr>
-<tr>
-<td style="text-align: center;">xi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Xi\)</span></td>
-<td style="text-align: center;">\Xi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\xi\)</span></td>
-<td style="text-align: center;">\xi</td>
-</tr>
-<tr>
-<td style="text-align: center;">omicron</td>
-<td style="text-align: center;"><span class="arithmatex">\(O\)</span></td>
-<td style="text-align: center;">O</td>
-<td style="text-align: center;"><span class="arithmatex">\(\omicron\)</span></td>
-<td style="text-align: center;">\omicron</td>
-</tr>
-<tr>
-<td style="text-align: center;">pi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Pi\)</span></td>
-<td style="text-align: center;">\Pi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\pi\)</span></td>
-<td style="text-align: center;">\pi</td>
-</tr>
-<tr>
-<td style="text-align: center;">rho</td>
-<td style="text-align: center;"><span class="arithmatex">\(P\)</span></td>
-<td style="text-align: center;">P</td>
-<td style="text-align: center;"><span class="arithmatex">\(\rho\)</span></td>
-<td style="text-align: center;">\rho</td>
-</tr>
-<tr>
-<td style="text-align: center;">sigma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Sigma\)</span></td>
-<td style="text-align: center;">\Sigma</td>
-<td style="text-align: center;"><span class="arithmatex">\(\sigma\)</span></td>
-<td style="text-align: center;">\sigma</td>
-</tr>
-<tr>
-<td style="text-align: center;">tau</td>
-<td style="text-align: center;"><span class="arithmatex">\(T\)</span></td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"><span class="arithmatex">\(\tau\)</span></td>
-<td style="text-align: center;">\tau</td>
-</tr>
-<tr>
-<td style="text-align: center;">upsilon</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Upsilon\)</span></td>
-<td style="text-align: center;">\Upsilon</td>
-<td style="text-align: center;"><span class="arithmatex">\(\upsilon\)</span></td>
-<td style="text-align: center;">\upsilon</td>
-</tr>
-<tr>
-<td style="text-align: center;">psi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Psi\)</span></td>
-<td style="text-align: center;">\Psi</td>
-<td style="text-align: center;"><span class="arithmatex">\(\psi\)</span></td>
-<td style="text-align: center;">\psi</td>
-</tr>
-<tr>
-<td style="text-align: center;">omega</td>
-<td style="text-align: center;"><span class="arithmatex">\(\Omega\)</span></td>
-<td style="text-align: center;">\Omega</td>
-<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
-<td style="text-align: center;">\omega</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_3">上标与下标</h3>
-<ul>
-<li>上标：^ 例如 <code>x_i^2</code> : <span class="arithmatex">\(x_i^2\)</span> </li>
-<li>下标：_ 例如 <code>x_j</code> <span class="arithmatex">\(x_j\)</span> </li>
-</ul>
-<p>注意： 一个组即单个字符或者使用{...}包裹起来的内容。他可以消除二义性</p>
-<p>例如：<code>10^10</code>会得到 <span class="arithmatex">\(10^10\)</span>    </p>
-<p>​       <code>10^{10}</code> 会得到 <span class="arithmatex">\(10^{10}\)</span> </p>
-<h3 id="_4">括号</h3>
-<ul>
-<li>小括号和方括号：() []  <span class="arithmatex">\(()\)</span>  <span class="arithmatex">\([]\)</span> </li>
-<li>大括号：<code>\}  \{</code>   或者  <code>\lbrace</code>   <code>\rbrace</code>  <ul>
-<li>例如：<code>\{a*b\}</code> <span class="arithmatex">\(\{a*b\}\)</span>    </li>
-</ul>
-</li>
-<li>尖括号： <code>\langle</code> 和 <code>\rangle</code>   ：<span class="arithmatex">\(\langle x\rangle\)</span></li>
-<li>上取整：<code>\lceil</code>和<code>\rceil</code> ：<span class="arithmatex">\(\lceil x\rceil\)</span></li>
-<li>下取整：<code>\lfloor</code> 和 <code>\rfloor</code> ：<span class="arithmatex">\(\lfloor x \rfloor\)</span></li>
-<li>不可见括号，用 . 表示</li>
-</ul>
-<p>注意：原始符号不会随着公式大小缩放，可以使用\left(...\right)来自适应地调整括号大小。</p>
-<h3 id="_5">求和与积分</h3>
-<ul>
-<li>\sum 用来表示求和符号，其下标表示求和下限，上标表示上限。<ul>
-<li><code>\sum_1^n</code>    <span class="arithmatex">\(\sum_1^n\)</span></li>
-</ul>
-</li>
-<li>\int 用来表示积分符号<ul>
-<li><code>\int_1^\infty</code> :   <span class="arithmatex">\(\int_1^\infty\)</span> </li>
-</ul>
-</li>
-<li><code>\prod</code> ：<span class="arithmatex">\(\prod\)</span> </li>
-<li><code>\bigcup</code> : <span class="arithmatex">\(\bigcup\)</span> </li>
-<li><code>\bigcap</code> ：<span class="arithmatex">\(\bigcup\)</span></li>
-<li><code>\iint</code> : <span class="arithmatex">\(\iint\)</span></li>
-</ul>
-<h3 id="_6">分式和根式</h3>
-<ul>
-<li><code>\frac ab</code>   ： <span class="arithmatex">\(\frac ab\)</span>   (如果分子分母不是单个字符，使用{...}分组)</li>
-<li><code>\over</code> ：<code>{a+1\over b+1}</code>: <span class="arithmatex">\({a+1\over b+1}\)</span></li>
-<li><code>\sqrt</code> :   <code>\sqrt{\frac ab}</code> :  <span class="arithmatex">\(\sqrt{\frac ab}\)</span>   <code>\sqrt[4]{a \over b}$</code> : <span class="arithmatex">\(\sqrt[4]{a \over b}\)</span></li>
-</ul>
-<h3 id="_7">字体</h3>
-<ul>
-<li>\mathbb 或 \Bbb 显示黑板粗体字，此字体经常用来表示实数，整数，有理数和负数：<span class="arithmatex">\(\mathbb {CHNQRZ}\)</span></li>
-<li>\mathbf 显示黑体字：<span class="arithmatex">\(\mathbf  {BCDEFG}\)</span></li>
-<li>\mathtt 显示打印机字体：<span class="arithmatex">\(\mathtt  {BCDEFG}\)</span></li>
-<li>\mathrm 显示罗马体 : <span class="arithmatex">\(\mathrm {ABCD}\)</span></li>
-<li>\mathscr 显示手写体 : <span class="arithmatex">\(\mathscr {ABCD}\)</span></li>
-<li>\mathfrak 显示Fraktur字母（一种德国字体）：<span class="arithmatex">\(\mathfrak{ABCD}\)</span></li>
-</ul>
-<h3 id="_8">特殊函数和符号</h3>
-<ul>
-<li>常见三角函数 <span class="arithmatex">\(sin(x)\)</span>  <span class="arithmatex">\(arctan(x)\)</span>   <span class="arithmatex">\(\lim_{1\rightarrow\infty}\)</span></li>
-<li>比较运算符 : \lt \gt \le \ge \neq : <span class="arithmatex">\(\lt\)</span>  <span class="arithmatex">\(\gt\)</span>  <span class="arithmatex">\(\le\)</span>  <span class="arithmatex">\(\ge\)</span>  <span class="arithmatex">\(\neq\)</span>   。可以加上\not： <span class="arithmatex">\(\not\lt\)</span> </li>
-<li>\times  \div \pm \mp : <span class="arithmatex">\(\times\)</span>   <span class="arithmatex">\(\div\)</span>  <span class="arithmatex">\(\pm\)</span>  <span class="arithmatex">\(\mp\)</span> </li>
-<li>\cdot 表示居中的点 : x \codt y : <span class="arithmatex">\(x \cdot y\)</span></li>
-<li>集合关系与运算：<ul>
-<li>\cup <span class="arithmatex">\(\cup\)</span></li>
-<li>\cap <span class="arithmatex">\(\cap\)</span></li>
-<li>\setminus <span class="arithmatex">\(\setminus\)</span></li>
-<li>\subset <span class="arithmatex">\(\subset\)</span></li>
-<li>\subseteq <span class="arithmatex">\(\subseteq\)</span></li>
-<li>\subsetneq <span class="arithmatex">\(\subsetneq\)</span></li>
-<li>\supset <span class="arithmatex">\(\supset\)</span></li>
-<li>\in <span class="arithmatex">\(\in\)</span></li>
-<li>\notin <span class="arithmatex">\(\notin\)</span></li>
-<li>\emptyset <span class="arithmatex">\(\emptyset\)</span></li>
-<li>\varnothing  <span class="arithmatex">\(\varnothing\)</span></li>
-</ul>
-</li>
-<li>表示排列使用 \binom  {n+1}{2k}或{n+1\choose 2k}<ul>
-<li><span class="arithmatex">\(\binom {n+1}{2k}\)</span>   $ {n+1\choose 2k}$ </li>
-</ul>
-</li>
-<li>箭头：\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto<ul>
-<li><span class="arithmatex">\(\to\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(\leftarrow\)</span> <span class="arithmatex">\(\Rightarrow\)</span> <span class="arithmatex">\(\Leftarrow\)</span> <span class="arithmatex">\(\mapsto\)</span></li>
-</ul>
-</li>
-<li>逻辑运算符：\land \lor \lnot \forall \exists \top \bot \vdash \vDash<ul>
-<li><span class="arithmatex">\(\land\)</span>  <span class="arithmatex">\(\lor\)</span> <span class="arithmatex">\(\lnot\)</span>    <span class="arithmatex">\(\forall\)</span>    <span class="arithmatex">\(\exists\)</span>  </li>
-</ul>
-</li>
-<li>\star \ast \oplus \circ \bullet <ul>
-<li><span class="arithmatex">\(\star\)</span> <span class="arithmatex">\(\ast\)</span> <span class="arithmatex">\(\oplus\)</span> <span class="arithmatex">\(\circ\)</span> <span class="arithmatex">\(\bullet\)</span> </li>
-</ul>
-</li>
-<li>\approx <span class="arithmatex">\(\approx\)</span>   \sim <span class="arithmatex">\(\sim\)</span>  \cong <span class="arithmatex">\(\cong\)</span>  \equiv <span class="arithmatex">\(\equiv\)</span>  \prec <span class="arithmatex">\(\prec\)</span> </li>
-<li>\infty <span class="arithmatex">\(\infty\)</span> \aleph_o <span class="arithmatex">\(\aleph_o\)</span> \navla <span class="arithmatex">\(\nabla\)</span>  \Im <span class="arithmatex">\(\Im\)</span>  \Re <span class="arithmatex">\(\Re\)</span> </li>
-<li>\pmode   <span class="arithmatex">\(a\equiv b \pmod n\)</span></li>
-<li>\ldots  \cdots  ldots 的位置稍低，cdots位置居中<ul>
-<li><span class="arithmatex">\(a_1 + a_2 +\cdots +a_n\)</span>   </li>
-<li><span class="arithmatex">\(a_1,a_2,\ldots,a_n\)</span></li>
-</ul>
-</li>
-</ul>
-<h3 id="_9">空间</h3>
-<p><code>a \ b</code> ：<span class="arithmatex">\(a \ b\)</span> </p>
-<p><code>a \; b</code> :  <span class="arithmatex">\(a \; b\)</span></p>
-<p><code>a\quad b</code> ：<span class="arithmatex">\(a\quad b\)</span></p>
-<p><code>a\qquad b</code> :  <span class="arithmatex">\(a\qquad b\)</span></p>
-<h3 id="_10">顶部符号</h3>
-<p>加波浪线 输入 \widetilde   \sim</p>
-<p>加一个点 \dot{要加点的字母}加两个点\ddot{要加点的字母}</p>
-<h3 id="_11">声调/变音符号</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> <span class="s">$</span><span class="nv">\dot</span><span class="nb">{a} </span><span class="nv">\ddot</span><span class="nb">{a} </span><span class="nv">\acute</span><span class="nb">{a} </span><span class="nv">\grave</span><span class="nb">{a}</span><span class="s">$</span> 
+<h2 id="cmake">安装 CMake</h2>
+<p>CMake 安装可到官网下载：<a href="https://cmake.org/download/">Download CMake</a>，我选择的版本是 3.31：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget<span class="w"> </span>https://github.com/Kitware/CMake/releases/download/v3.31.0/cmake-3.31.0.tar.gz
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tar<span class="w"> </span>-zxvf<span class="w"> </span>cmake-3.31.0.tar.gz
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>./bootstrap
 </code></pre></div>
-<p><span class="arithmatex">\(\dot{a} \quad \ddot{a} \quad\acute{a}\quad \grave{a}\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> <span class="s">$</span><span class="nv">\check</span><span class="nb">{a} </span><span class="nv">\breve</span><span class="nb">{a} </span><span class="nv">\tilde</span><span class="nb">{a} </span><span class="nv">\bar</span><span class="nb">{a}</span><span class="s">$</span> 
+<p>过程中可能缺少依赖，需要安装一些开发工具和第三方库：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>build-essential<span class="w"> </span>libssl-dev
 </code></pre></div>
-<p><span class="arithmatex">\(\check{a} \quad \breve{a} \quad \tilde{a} \quad \bar{a}\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a> <span class="s">$</span><span class="nv">\hat</span><span class="nb">{a} </span><span class="nv">\widehat</span><span class="nb">{a} </span><span class="nv">\vec</span><span class="nb">{a} </span><span class="nv">\overline</span><span class="nb">{a}</span><span class="s">$</span> 
+<p>然后编译 CMake</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>make
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># 如果编译较慢，可以开启多核并行编译，后面的 4 是开启的核数</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>make<span class="w"> </span>-j4
 </code></pre></div>
-<p><span class="arithmatex">\(\hat{a}\quad \widehat{a} \quad\vec{a} \quad \overline{a}\)</span></p>
-<h3 id="_12">数学公式</h3>
-<h4 id="1">1. 界限</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="s">$</span><span class="nv">\min</span><span class="nb"> x </span><span class="nv">\max</span><span class="nb"> y </span><span class="nv">\inf</span><span class="nb"> s </span><span class="nv">\sup</span><span class="nb"> t</span><span class="s">$</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="s">$</span><span class="nv">\lim</span><span class="nb"> u </span><span class="nv">\liminf</span><span class="nb"> v </span><span class="nv">\limsup</span><span class="nb"> w</span><span class="s">$</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s">$</span><span class="nv">\dim</span><span class="nb"> p </span><span class="nv">\deg</span><span class="nb"> p </span><span class="nv">\det</span><span class="nb"> m </span><span class="nv">\ker\phi</span><span class="s">$</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s">$</span><span class="nv">\infty</span><span class="s">$</span>
+<p>最后编译安装</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<p><span class="arithmatex">\(\min x \quad \max y \quad \inf s \quad \sup t\)</span>
-<span class="arithmatex">\(\lim u \quad \liminf v \quad \limsup w\)</span>
-<span class="arithmatex">\(\dim p \quad \deg p \quad \det m \quad \ker\phi\)</span></p>
-<p><span class="arithmatex">\(\infty\)</span></p>
-<h4 id="2">2. 微分以及导数</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="s">$</span><span class="nb">dt </span><span class="nv">\mathrm</span><span class="nb">{d}t </span><span class="nv">\partial</span><span class="nb"> t </span><span class="nv">\nabla\psi</span><span class="s">$</span>
+<h2 id="clang">安装 Clang、相关开发依赖库</h2>
+<p>这一步可以直接安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>clang-18<span class="w"> </span>libclang-18-dev
 </code></pre></div>
-<p><span class="arithmatex">\(dt \quad \mathrm{d}t \quad \partial t \quad \nabla\psi\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="s">$</span><span class="nv">\prime</span><span class="nb"> </span><span class="nv">\backprime</span><span class="nb"> f^</span><span class="nv">\prime</span><span class="nb"> f&#39; f&#39;&#39; f^{</span><span class="o">(</span><span class="m">3</span><span class="o">)</span><span class="nb">} </span><span class="nv">\dot</span><span class="nb">{y} </span><span class="nv">\ddot</span><span class="nb">{y}</span><span class="s">$</span> 
+<p>这将安装版本 18 的 clang，以及 clang 和 llvm 的库（头文件和 .a，.so 文件等等）。注意这里的命令仅限 Ubuntu，如果是其他系统，或者遇到了意外情况，可以去  <a href="[Build · MaskRay/ccls Wiki](https://github.com/MaskRay/ccls/wiki/Build)">repo wiki</a>  中找找有没有解决办法。</p>
+<h2 id="ccls">编译安装 ccls</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 下载源码</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>--recursive<span class="w"> </span>https://github.com/MaskRay/ccls
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">cd</span><span class="w"> </span>ccls
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># cmake 构建，注意需要找到自己系统里面的 llvm 相关文件路径</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>cmake<span class="w"> </span>-S.<span class="w"> </span>-BRelease<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span>-DCMAKE_PREFIX_PATH<span class="o">=</span>/usr/lib/llvm-18<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span>-DLLVM_INCLUDE_DIR<span class="o">=</span>/usr/lib/llvm-18/include<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span>-DLLVM_BUILD_INCLUDE_DIR<span class="o">=</span>/usr/include/llvm-18/
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1"># 编译安装</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nb">cd</span><span class="w"> </span>Release<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
-<p><span class="arithmatex">\(\prime \quad \backprime \quad f^\prime \quad f' \quad f'' \quad f^{(3)} \quad \dot{y} \quad \ddot{y}\)</span> </p>
-<h4 id="3">3. 模算数</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="s">$</span><span class="nb">a </span><span class="nv">\equiv</span><span class="nb"> </span><span class="m">1</span><span class="nb"> </span><span class="nv">\pmod</span><span class="nb"> {m}</span><span class="s">$</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s">$</span><span class="nb">a</span><span class="nv">\%</span><span class="nb">b</span><span class="s">$</span> 
+<p>然后就可以查看是否安装成功啦~</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">(</span>base<span class="o">)</span><span class="w"> </span>kpole@kpole:~/ccls/Release$<span class="w"> </span>whereis<span class="w"> </span>ccls
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>ccls:<span class="w"> </span>/usr/local/bin/ccls
 </code></pre></div>
-<p><span class="arithmatex">\(a \equiv 1 \pmod {m}\)</span></p>
-<p><span class="arithmatex">\(a\%b\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="s">$</span><span class="nb">a </span><span class="nv">\bmod</span><span class="nb"> b</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(a \bmod b\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> <span class="s">$</span><span class="nv">\gcd</span><span class="o">(</span><span class="nb">m,n</span><span class="o">)</span><span class="nb"> </span><span class="nv">\operatorname</span><span class="nb">{lcm}</span><span class="o">(</span><span class="nb">m,n</span><span class="o">)</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\gcd(m,n) \quad \operatorname{lcm}(m,n)\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="s">$</span><span class="nv">\mid</span><span class="nb"> </span><span class="nv">\nmid</span><span class="nb"> </span><span class="nv">\shortmid</span><span class="nb"> </span><span class="nv">\nshortmid</span><span class="s">$</span> 
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a> ps：<span class="k">\mid</span>可以用|代替。
-</code></pre></div>
-<p><span class="arithmatex">\(\mid \quad \nmid \quad \shortmid \quad \nshortmid\)</span>  </p>
-<h4 id="4">4. 根号</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="s">$</span><span class="nv">\surd</span><span class="nb"> </span><span class="nv">\sqrt</span><span class="nb">{</span><span class="m">2</span><span class="nb">} </span><span class="nv">\sqrt</span><span class="o">[</span><span class="nb">n</span><span class="o">]</span><span class="nb">{} </span><span class="nv">\sqrt</span><span class="o">[</span><span class="nb">n</span><span class="o">]</span><span class="nb">{x}</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\surd \quad \sqrt{2} \quad \sqrt[n]{} \quad \sqrt[n]{x}\)</span> </p>
-<h4 id="5">5. 运算符</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a> <span class="s">$</span><span class="o">+</span><span class="nb"> </span><span class="o">-</span><span class="nb"> </span><span class="nv">\pm</span><span class="nb"> </span><span class="nv">\mp</span><span class="nb"> </span><span class="nv">\dotplus</span><span class="s">$</span> 
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a> <span class="s">$</span><span class="nv">\times</span><span class="nb"> </span><span class="nv">\div</span><span class="nb"> </span><span class="nv">\divideontimes</span><span class="nb"> </span><span class="o">/</span><span class="nb"> </span><span class="nv">\backslash</span><span class="s">$</span> 
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a> <span class="s">$</span><span class="nv">\cdot</span><span class="nb"> </span><span class="o">*</span><span class="nb"> </span><span class="nv">\star</span><span class="nb"> </span><span class="nv">\circ</span><span class="nb"> </span><span class="nv">\bullet</span><span class="s">$</span> 
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a> <span class="s">$</span><span class="nv">\oplus</span><span class="nb"> </span><span class="nv">\ominus</span><span class="nb"> </span><span class="nv">\otimes</span><span class="nb"> </span><span class="nv">\oslash</span><span class="nb"> </span><span class="nv">\odot</span><span class="s">$</span> 
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a> <span class="s">$</span><span class="nv">\bigoplus</span><span class="nb"> </span><span class="nv">\bigotimes</span><span class="nb"> </span><span class="nv">\bigodot</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(+ \quad - \quad \pm \quad \mp \quad \dotplus\)</span> 
- <span class="arithmatex">\(\times \quad \div \quad \divideontimes \quad / \quad \backslash\)</span> 
- <span class="arithmatex">\(\cdot \quad * \quad \star \quad \circ \quad \bullet\)</span> </p>
-<p><span class="arithmatex">\(\oplus\quad \ominus\quad \otimes\quad \oslash\quad \odot\)</span> </p>
-<p><span class="arithmatex">\(\bigoplus \quad \bigotimes \quad \bigodot\)</span> </p>
-<h4 id="6">6. 集合</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a> <span class="s">$</span><span class="nv">\emptyset</span><span class="nb"> </span><span class="nv">\varnothing</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\emptyset \quad \varnothing\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a> <span class="s">$</span><span class="nv">\in</span><span class="nb"> </span><span class="nv">\notin</span><span class="nb"> </span><span class="nv">\not\in</span><span class="nb"> </span><span class="nv">\ni</span><span class="nb"> </span><span class="nv">\not\ni</span><span class="s">$</span> 
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a> ps:<span class="k">\not</span>是在下一个字符上画斜杠。
-</code></pre></div>
-<p><span class="arithmatex">\(\in \quad \notin \quad \not\in \quad \ni \quad \not\ni\)</span>  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="s">$</span><span class="nv">\subset</span><span class="nb"> </span><span class="nv">\supset</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(\subset\quad  \supset\)</span></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="s">$</span><span class="nv">\subseteq</span><span class="nb"> </span><span class="nv">\nsubseteq</span><span class="nb"> </span><span class="nv">\subsetneq</span><span class="nb"> </span><span class="nv">\varsubsetneq</span><span class="nb"> </span><span class="nv">\sqsubseteq</span><span class="s">$</span> 
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="s">$</span><span class="nv">\supseteq</span><span class="nb"> </span><span class="nv">\nsupseteq</span><span class="nb"> </span><span class="nv">\supsetneq</span><span class="nb"> </span><span class="nv">\varsupsetneq</span><span class="nb"> </span><span class="nv">\sqsupseteq</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\subseteq \quad \nsubseteq \quad \subsetneq \quad \varsubsetneq \quad \sqsubseteq\)</span> </p>
-<p><span class="arithmatex">\(\supseteq \quad \nsupseteq \quad \supsetneq \quad \varsupsetneq \quad \sqsupseteq\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="s">$</span><span class="nv">\cap</span><span class="nb"> </span><span class="nv">\bigcap</span><span class="nb"> </span><span class="nv">\cup</span><span class="nb"> </span><span class="nv">\bigcup</span><span class="s">$</span>
-</code></pre></div>
-<p><span class="arithmatex">\(\cap \quad \bigcap \quad \cup \quad \bigcup\)</span></p>
-<h4 id="_13">关系符号</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a> <span class="s">$</span><span class="o">=</span><span class="nb"> </span><span class="nv">\ne</span><span class="nb"> </span><span class="nv">\neq</span><span class="nb"> </span><span class="nv">\equiv</span><span class="nb"> </span><span class="nv">\not\equiv</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(= \quad \ne \quad \neq \quad \equiv \quad \not\equiv\)</span> </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="s">$</span><span class="nv">\sim</span><span class="nb"> </span><span class="nv">\nsim</span><span class="nb"> </span><span class="nv">\backsim</span><span class="nb"> </span><span class="nv">\thicksim</span><span class="nb"> </span><span class="nv">\simeq</span><span class="nb"> </span><span class="nv">\backsimeq</span><span class="nb"> </span><span class="nv">\eqsim</span><span class="nb"> </span><span class="nv">\cong</span><span class="nb"> </span><span class="nv">\ncong</span><span class="s">$</span> 
-</code></pre></div>
-<p><span class="arithmatex">\(\sim \quad \nsim \quad \backsim \quad \thicksim \quad \simeq \quad \backsimeq\quad  \eqsim \quad \cong\quad  \ncong\)</span> </p>
 
   <div id="busuanzi_container_page_pv" style="margin: 10px 0px;">
     <font size="2" color="grey">本文访问 <span id="busuanzi_value_page_pv"></span> 次</font>
@@ -1884,7 +1256,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 21, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 16, 2024</span>
   </span>
 
     
@@ -1894,7 +1266,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 16, 2024</span>
   </span>
 
     
