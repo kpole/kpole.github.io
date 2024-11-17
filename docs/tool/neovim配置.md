@@ -54,7 +54,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin" # in .bashrc or .zshrc
 
 每次安装插件，需要在 plugins.lua 中添加插件。如果插件需要详细配置，可以在 config 中添加相应的文件（文件名可自定义，但注意有些插件的配置文件名不能与插件同名，否则引入插件时会有问题），并在 plugins.lua 中引入。
 
-该文件目录参考来自：[https://www.cnblogs.com/youngxhui/p/17730419.html](https://www.cnblogs.com/youngxhui/p/17730419.html)。这篇文章写的很好，如有需要，建议读者阅读。
+该文件目录参考来自：[https://martinlwx.github.io/zh-cn/config-neovim-from-scratch](https://martinlwx.github.io/zh-cn/config-neovim-from-scratch)。这篇文章写的很好，推荐阅读。
 
 
 ## 插件
@@ -187,14 +187,19 @@ require 'nvim-treesitter.install'.compilers = { 'clang++'}
 
 [folke/which-key.nvim: 💥 Create key bindings that stick. WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type. (github.com)](https://github.com/folke/which-key.nvim)
 
-
-
 ### 主题插件
 
 nvim 可用的主题有很多，可以从这里自选：[trending colorschemes | vimcolorschemes](https://vimcolorschemes.com/i/trending)
 
 
 ## LSP 配置
+```
+ -- LSP manager
+ "williamboman/mason.nvim",
+ "williamboman/mason-lspconfig.nvim",
+ "neovim/nvim-lspconfig",
+```
+
 lspconfig
 
 + [d 跳至上一个有错误的地方
@@ -305,7 +310,10 @@ ToggleTermToggleAll 打开之前所有的 term
 
 TermExec
 
-### 
+### TODO
+
+tagbar
+
 ## 参考资料
 + Lazy 文档：[https://lazy.folke.io/usage](https://lazy.folke.io/usage)
 + Lua 语法：[https://learnxinyminutes.com/docs/lua/](https://learnxinyminutes.com/docs/lua/)

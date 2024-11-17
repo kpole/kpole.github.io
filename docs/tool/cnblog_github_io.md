@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 > 笔者最初在 cnblog 上面发了很多随笔（水文），后面感觉广告有点多，并且难于管理文章，于是破罐破摔（不要学我）搭建了自己的博客。后来，我折腾过 wordpress、jeklly、github Pages（hexo） 和 gitee Pages 等等，既放不下 cnblog 上的流量与互动（毕竟上面还有很多青春），也放不下 github Pages 的清爽。于是时隔多日后，我打算构建这样一条工作流，每次写文章时可以方便的更新与维护。
 
 ## 软件安装

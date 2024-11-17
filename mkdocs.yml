@@ -178,7 +178,7 @@ nav:
     - Linux:
       - vim:
         - NERDTree: "Linux/vim/plugins/nerdtree.md"
-      - ubuntu 安装 ccls: "Linux/ccls.md"
+      
     - C++:
       - chrono: "CPP/chrono.md"
     - Python:
@@ -188,6 +188,8 @@ nav:
       - matplotlib模块: "Python/matplotlib模块.md"
     - tool:
       - neovim 配置: "tool/neovim配置.md"
+      - ubuntu 安装 ccls: "tool/ccls.md"
+      - neovim 配置 LSP（ccls）: "tool/nvim_with_ccls.md"
       - cnblog + vscode + typora + picgo 构建高效博客维护工具流: "tool/cnblog_github_io.md"
       - Matjax公式汇总: "tool/mathjax.md"
       - markdown: "tool/markdown.md"
