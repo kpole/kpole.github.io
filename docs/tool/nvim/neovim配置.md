@@ -1,12 +1,8 @@
----
-comments: true
----
-
 # neovim 配置
 
 > 前言
 >
-> 本文主要介绍 neovim 的安装和推荐插件的配置和基本使用方法。写作本文，一是为了配置 neovim 时有所参考，二是为了更好的宣传 neovim。
+> 本文主要介绍 neovim 的安装和推荐插件的配置和基本使用方法。
 >
 > 特此说明，在安装插件时可能会遇到各种各样的问题，一些常见的排查角度是：
 > - neovim 版本是否符合要求？
@@ -25,7 +21,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin" # in .bashrc or .zshrc
 
 最后一句 shell 命令将 nvim 的路径添加到 PATH 当中，要记得把命令添加到 .bashrc 中以长期生效。
 
-然后你就可以使用 nvim 来启动 nvim 了。
+然后你就可以使用 nvim 来启动 neovim 了。
 
 ## 配置方法
 
@@ -54,7 +50,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin" # in .bashrc or .zshrc
 
 每次安装插件，需要在 plugins.lua 中添加插件。如果插件需要详细配置，可以在 config 中添加相应的文件（文件名可自定义，但注意有些插件的配置文件名不能与插件同名，否则引入插件时会有问题），并在 plugins.lua 中引入。
 
-该文件目录参考来自：[https://martinlwx.github.io/zh-cn/config-neovim-from-scratch](https://martinlwx.github.io/zh-cn/config-neovim-from-scratch)。这篇文章写的很好，推荐阅读。
+该文件目录参考来自：[https://www.cnblogs.com/youngxhui/p/17730419.html](https://www.cnblogs.com/youngxhui/p/17730419.html)。这篇文章写的很好，如有需要，建议读者阅读。
 
 
 ## 插件
@@ -63,13 +59,24 @@ export PATH="$PATH:/opt/nvim-linux64/bin" # in .bashrc or .zshrc
 
 下表罗列出本文推荐安装的几款插件。
 
-| 插件名称        | 作用               |
-| :-------------- | :----------------- |
-| nvim-tree       | 文件树目录         |
-| bufferline      | 文件 tab 栏        |
-| Telescope       | 文件查找、字段查找 |
-| auto-pairs      | 括号匹配           |
-| nvim-treesitter | 关键字匹配、高亮   |
+| 插件名称             | 作用                              |
+| :------------------- | :-------------------------------- |
+| nvim-tree            | 文件树目录                        |
+| bufferline           | 文件 tab 栏                       |
+| Telescope            | 文件查找、字段查找                |
+| auto-pairs           | 括号匹配                          |
+| nvim-treesitter      | 关键字匹配、高亮                  |
+| lspkind.nvim         | 像 vs-code 中的代码补全提示样式   |
+| LuaSnip              | Snippets 引擎，用于自定义代码片段 |
+| lsp_signature.nvim   | 函数签名提示                      |
+| mason.Neovim         | LSP 相关                          |
+| mason-lspconfig.nvim | LSP 相关                          |
+| nvim-lspconfig       | LSP 相关                          |
+| lualine.nvim         | 状态栏美化                        |
+| toggleterm.nvim      | 内置 terminal                     |
+| diffview.nvim        | git diff view                     |
+| log-highlight.nvim   | 日志高亮插件                      |
+
 
 ### nvim-tree
 
@@ -184,8 +191,9 @@ require 'nvim-treesitter.install'.compilers = { 'clang++'}
 
 ### Which-key
 
-
 [folke/which-key.nvim: 💥 Create key bindings that stick. WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type. (github.com)](https://github.com/folke/which-key.nvim)
+
+
 
 ### 主题插件
 
@@ -193,13 +201,6 @@ nvim 可用的主题有很多，可以从这里自选：[trending colorschemes |
 
 
 ## LSP 配置
-```
- -- LSP manager
- "williamboman/mason.nvim",
- "williamboman/mason-lspconfig.nvim",
- "neovim/nvim-lspconfig",
-```
-
 lspconfig
 
 + [d 跳至上一个有错误的地方
@@ -310,10 +311,7 @@ ToggleTermToggleAll 打开之前所有的 term
 
 TermExec
 
-### TODO
-
-tagbar
-
+### 
 ## 参考资料
 + Lazy 文档：[https://lazy.folke.io/usage](https://lazy.folke.io/usage)
 + Lua 语法：[https://learnxinyminutes.com/docs/lua/](https://learnxinyminutes.com/docs/lua/)

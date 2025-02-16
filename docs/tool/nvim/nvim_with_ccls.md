@@ -6,7 +6,7 @@ comments : true
 
 ## 安装与配置
 
-首先安装 LSP 管理插件：
+本文使用 Lazy vim 插件管理器，首先安装 LSP 管理插件：
 
 ```
 ... -- 省略其他行
@@ -19,11 +19,13 @@ require("lazy").setup({
 })
 ```
 
-其中 mason-lspconfig 中只有 clangd，目前（2024/11/17）没有支持 ccls，因此我们使用 nvim-lspconfig。
+其中 mason 是方便各种 LSP 安装和配置的，nvim-lspconfig 则是负责与 LSP 进行交互，而 mason-lspconfig 则是将两者联系起来。
 
-安装 ccls 的教程可以参考我的另外一篇文章。
+我们一般在安装 LSP 时，可以先去 mason 的列表里面找一下，如果有就直接填空就自动安装好了（例如 clangd）。但不幸的是目前（2024/11/17）没有支持 ccls，因此我们需要手动安装 ccls。
 
-配置如下：
+使用 Ubuntu 的朋友可以参考我的上一篇文章来安装 ccls。使用其他系统的朋友也可以借鉴一下，源码编译步骤都一样，提前声明可能会遇到一些坑。
+
+nvim-lspconfig 的配置如下：
 
 ```lua
 local lspconfig = require('lspconfig')

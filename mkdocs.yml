@@ -85,7 +85,7 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - "assets/javascripts/tablesort.js"
   # 不蒜子访问量统计
-  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+  - https://vercount.one/js
 
 extra_css:
   - "assets/css/extra.css"
@@ -114,8 +114,10 @@ nav:
     - Home: "index.md"
     - 比赛记录: "record.md"
   - 算法竞赛:
+    - 简介: "LeetCode/README.md"
     - LeetCode:
       - 周赛:
+        - 第 437 场周赛: "LeetCode/周赛/437.md"
         - 第 357 场周赛: "LeetCode/周赛/第357场周赛.md"
         - 第 336 场周赛: "LeetCode/周赛/第336场周赛.md"
         - 第 335 场周赛: "LeetCode/周赛/第335场周赛.md"
@@ -178,7 +180,6 @@ nav:
     - Linux:
       - vim:
         - NERDTree: "Linux/vim/plugins/nerdtree.md"
-      
     - C++:
       - chrono: "CPP/chrono.md"
     - Python:
@@ -186,7 +187,7 @@ nav:
       - datetime模块: "Python/datetime模块.md"
       - Pandas模块: "Python/Pandas模块.md"
       - matplotlib模块: "Python/matplotlib模块.md"
-    - tool:
+    - 工具相关:
       - neovim 配置: "tool/neovim配置.md"
       - ubuntu 安装 ccls: "tool/ccls.md"
       - neovim 配置 LSP（ccls）: "tool/nvim_with_ccls.md"

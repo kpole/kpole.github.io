@@ -5,7 +5,7 @@ comments: true
 ## 关于我
 
 
-你好，我是今夕，目前HUST研三在读，是一个退役的ACMer，仍热衷于在闲暇时间打比赛（摸鱼）。
+你好，我是今夕，一个爱吃爱玩的摸鱼选手。
 
 我的一些账号们:
 
@@ -23,7 +23,7 @@ comments: true
 3. 日常学习笔记，个人经验总结等
 
 
-## Material color palette 颜色主题
+<!-- ## Material color palette 颜色主题
 
 ### Primary colors 主色
 
@@ -52,8 +52,8 @@ comments: true
 <button data-md-color-primary="grey">Grey</button>
 <button data-md-color-primary="blue-grey">Blue Grey</button>
 <button data-md-color-primary="white">White</button>
-</div>
-
+</div> -->
+<!-- 
 <script>
   var buttons = document.querySelectorAll("button[data-md-color-primary]");
   Array.prototype.forEach.call(buttons, function(button) {
@@ -100,4 +100,4 @@ comments: true
 
   // #758
   document.getElementsByClassName('md-nav__title')[1].click()
-</script>
+</script> -->
